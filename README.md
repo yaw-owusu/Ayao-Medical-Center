@@ -1,2 +1,2 @@
-# Swift Car Rental
-*A car rental management system built with PHP, MySQL, HTML
+# Hospify App
+*A hospital management system built with PHP, MySQL, HTML.
