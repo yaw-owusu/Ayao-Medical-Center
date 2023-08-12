@@ -42,7 +42,7 @@
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
+        <a href="index.php" class="logo d-flex align-items-center">
           <img src="img/logo.png" alt="" />
           <span class="d-none d-lg-block">Swift Car Rentals</span>
         </a>
@@ -78,7 +78,7 @@
               <li>
                 <a
                   class="dropdown-item d-flex align-items-center"
-                  href="users-profile.html"
+                  href="users-profile.php"
                 >
                   <i class="bi bi-person"></i>
                   <span>My Profile</span>
@@ -91,7 +91,7 @@
               <li>
                 <a
                   class="dropdown-item d-flex align-items-center"
-                  href="pages-login.html"
+                  href="pages-login.php"
                 >
                   <i class="bi bi-box-arrow-right"></i>
                   <span>Sign Out</span>
@@ -109,7 +109,7 @@
     <aside id="sidebar" class="sidebar">
       <ul class="sidebar-nav" id="sidebar-nav">
         <li class="nav-item">
-          <a class="nav-link collapsed" href="index.html">
+          <a class="nav-link collapsed" href="index.php">
             <i class="bi bi-grid"></i>
             <span>Dashboard</span>
           </a>
@@ -132,7 +132,7 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="manage-admin.html">
+              <a href="manage-admin.php">
                 <i class="bi bi-circle"></i><span>Manage Administrator</span>
               </a>
             </li>
@@ -156,7 +156,7 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="manage-users.html">
+              <a href="manage-users.php">
                 <i class="bi bi-circle"></i><span>Manage Users</span>
               </a>
             </li>
@@ -180,27 +180,27 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="pages-managevehicles.html">
+              <a href="pages-managevehicles.php">
                 <i class="bi bi-circle"></i><span>Manage Vehicles</span>
               </a>
             </li>
             <li>
-              <a href="manage-brands.html">
+              <a href="manage-brands.php">
                 <i class="bi bi-circle"></i><span>Manage Brands</span>
               </a>
             </li>
             <li>
-              <a href="manage-testimonials.html">
+              <a href="manage-testimonials.php">
                 <i class="bi bi-circle"></i><span>Manage Testimonials</span>
               </a>
             </li>
             <li>
-              <a href="manage-bookings.html">
+              <a href="manage-bookings.php">
                 <i class="bi bi-circle"></i><span>Manage Bookings</span>
               </a>
             </li>
             <li>
-              <a href="manage-subscribers.html">
+              <a href="manage-subscribers.php">
                 <i class="bi bi-circle"></i><span>Manage Subscribers</span>
               </a>
             </li>
@@ -211,7 +211,7 @@
         <!-- <li class="nav-heading">Pages</li> -->
 
         <li class="nav-item">
-          <a class="nav-link collapsed" href="pages-contact.html">
+          <a class="nav-link collapsed" href="pages-contact.php">
             <i class="bi bi-envelope"></i>
             <span>Contact Us</span>
           </a>
@@ -522,7 +522,7 @@
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
       <div class="copyright">
-        &copy; Copyright <strong><span>Swift Car Rentals</span></strong
+        &copy; Copyright <strong><span>Hospify App</span></strong
         >. All Rights Reserved
       </div>
       <div class="credits">Designed by <a href="#">Group 34</a></div>

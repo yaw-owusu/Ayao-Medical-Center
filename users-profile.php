@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Swift Car Rentals</title>
+    <title>Hospify App</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -42,9 +42,9 @@
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
+        <a href="index.php" class="logo d-flex align-items-center">
           <img src="img/logo.png" alt="" />
-          <span class="d-none d-lg-block">Swift Cars Rentals</span>
+          <span class="d-none d-lg-block">Hospify App</span>
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
       </div>
@@ -84,7 +84,7 @@
               <li>
                 <a
                   class="dropdown-item d-flex align-items-center"
-                  href="users-profile.html"
+                  href="users-profile.php"
                 >
                   <i class="bi bi-person"></i>
                   <span>My Profile</span>
@@ -101,7 +101,7 @@
               <li>
                 <a
                   class="dropdown-item d-flex align-items-center"
-                  href="pages-login.html"
+                  href="pages-login.php"
                 >
                   <i class="bi bi-box-arrow-right"></i>
                   <span>Sign Out</span>
@@ -121,7 +121,7 @@
     <aside id="sidebar" class="sidebar">
       <ul class="sidebar-nav" id="sidebar-nav">
         <li class="nav-item">
-          <a class="nav-link collapsed" href="index.html">
+          <a class="nav-link collapsed" href="index.php">
             <i class="bi bi-grid"></i>
             <span>Dashboard</span>
           </a>
@@ -143,7 +143,7 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="manage-admin.html">
+              <a href="manage-admin.php">
                 <i class="bi bi-circle"></i><span>Add Administrator</span>
               </a>
             </li>
@@ -167,7 +167,7 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="manage-users.html">
+              <a href="manage-users.php">
                 <i class="bi bi-circle"></i><span>Add User</span>
               </a>
             </li>
@@ -191,27 +191,27 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="pages-managevehicles.html">
+              <a href="pages-managevehicles.php">
                 <i class="bi bi-circle"></i><span>Manage Vehicles</span>
               </a>
             </li>
             <li>
-              <a href="manage-brands.html">
+              <a href="manage-brands.php">
                 <i class="bi bi-circle"></i><span>Manage Brands</span>
               </a>
             </li>
             <li>
-              <a href="manage-testimonials.html">
+              <a href="manage-testimonials.php">
                 <i class="bi bi-circle"></i><span>Manage Testimonials</span>
               </a>
             </li>
             <li>
-              <a href="manage-bookings.html">
+              <a href="manage-bookings.php">
                 <i class="bi bi-circle"></i><span>Manage Bookings</span>
               </a>
             </li>
             <li>
-              <a href="manage-subscribers.html">
+              <a href="manage-subscribers.php">
                 <i class="bi bi-circle"></i><span>Manage Subscribers</span>
               </a>
             </li>
@@ -221,7 +221,7 @@
         <!-- <li class="nav-heading">Pages</li> -->
 
         <li class="nav-item">
-          <a class="nav-link collapsed" href="pages-contact.html">
+          <a class="nav-link collapsed" href="pages-contact.php">
             <i class="bi bi-envelope"></i>
             <span>Contact Us</span>
           </a>
@@ -235,7 +235,7 @@
         <h1>Profile</h1>
         <nav>
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
             <li class="breadcrumb-item">Users</li>
             <li class="breadcrumb-item active">Profile</li>
           </ol>
@@ -755,7 +755,7 @@
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
       <div class="copyright">
-        &copy; Copyright <strong><span>Swift Car Rentals</span></strong
+        &copy; Copyright <strong><span>Hospify App</span></strong
         >. All Rights Reserved
       </div>
       <div class="credits">Designed by <a href="#">Group 34</a></div>

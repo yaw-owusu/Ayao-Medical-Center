@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Swift Car Rentals</title>
+    <title>Hospify App</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -51,11 +51,11 @@
               >
                 <div class="d-flex justify-content-center py-4">
                   <a
-                    href="index.html"
+                    href="index.php"
                     class="logo d-flex align-items-center w-auto"
                   >
                     <img src="img/logo.png" alt="" />
-                    <span class="d-none d-lg-block">Swift Car Rental</span>
+                    <span class="d-none d-lg-block">Hospify App</span>
                   </a>
                 </div>
                 <!-- End Logo -->
@@ -106,7 +106,7 @@
                       <div class="col-12">
                         <p class="small mb-0">
                           Forgot Password ?
-                          <a href="pages-emailconfirm.html">Click here</a>
+                          <a href="pages-emailconfirm.php">Click here</a>
                         </p>
                       </div>
 
@@ -119,7 +119,7 @@
                       <div class="col-12">
                         <p class="small mb-0">
                           Don't have account?
-                          <a href="pages-register.html">Register here</a>
+                          <a href="pages-register.php">Register here</a>
                         </p>
                       </div>
                     </form>
