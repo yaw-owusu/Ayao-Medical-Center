@@ -51,11 +51,11 @@
               >
                 <div class="d-flex justify-content-center py-4">
                   <a
-                    href="index.html"
+                    href="index.php"
                     class="logo d-flex align-items-center w-auto"
                   >
                     <img src="img/logo.png" alt="" />
-                    <span class="d-none d-lg-block">Swift Car Rentals</span>
+                    <span class="d-none d-lg-block">Hospify App</span>
                   </a>
                 </div>
                 <!-- End Logo -->
@@ -126,7 +126,7 @@
                       <div class="col-12">
                         <p class="small mb-0">
                           Already have an account?
-                          <a href="pages-login.html">Log in</a>
+                          <a href="pages-login.php">Log in</a>
                         </p>
                       </div>
                     </form>
