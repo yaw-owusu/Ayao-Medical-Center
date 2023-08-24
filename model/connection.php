@@ -1,6 +1,6 @@
 <?php
 
-$dsn = 'mysql:host=localhost;dbname=grp34-ayoa-medical-center';
+$dsn = 'mysql:host=localhost;dbname=ayoa-medical -center';
 $username = 'root';
 $password = '';
 
