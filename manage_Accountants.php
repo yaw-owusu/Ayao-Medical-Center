@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Hospify App</title>
+    <title>Ayao Medical Center </title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -34,17 +34,19 @@
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
     <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
 
-    <!-- Main CSS File -->
+    <!--Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+
+   
   </head>
 
   <body>
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="index.php" class="logo d-flex align-items-center">
+        <a href="Dashboard.php" class="logo d-flex align-items-center">
           <img src="img/logo.png" alt="" />
-          <span class="d-none d-lg-block">Hospify App</span>
+          <span class="d-none d-lg-block">Ayao Medical Center </span>
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
       </div>
@@ -60,7 +62,7 @@
             >
               <!-- <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle"> -->
               <span class="d-none d-md-block dropdown-toggle ps-2"
-                >Welcome! Nana</span
+                >Welcome! Dr. Yaw </span
               > </a
             ><!-- End Profile Iamge Icon -->
 
@@ -68,7 +70,7 @@
               class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
             >
               <li class="dropdown-header">
-                <h6>Nana Yaw <i class="bi bi-patch-check-fill"></i></h6>
+                <h6>Dr. Yaw <i class="bi bi-patch-check-fill"></i></h6>
                 <span>Administrator</span>
               </li>
               <li>
@@ -109,7 +111,7 @@
     <aside id="sidebar" class="sidebar">
       <ul class="sidebar-nav" id="sidebar-nav">
         <li class="nav-item">
-          <a class="nav-link collapsed" href="index.php">
+          <a class="nav-link collapsed" href="Dashboard.php">
             <i class="bi bi-grid"></i>
             <span>Dashboard</span>
           </a>
@@ -132,7 +134,7 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="addAdmin.php">
+              <a href="manage_Admin.php">
                 <i class="bi bi-circle"></i><span>Add Administrator</span>
               </a>
             </li>
@@ -147,7 +149,7 @@
             data-bs-toggle="collapse"
             href="#"
           >
-            <i class="bi bi-people"></i><span>Users</span
+            <i class="bi bi-people"></i><span>Doctors</span
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
@@ -156,8 +158,133 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="manageUsers.php">
-                <i class="bi bi-circle"></i><span>Add User</span>
+              <a href="manage_Doctors.php">
+                <i class="bi bi-circle"></i><span>Add Doctors</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+       <!-- End Tables Nav -->
+
+       <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Patients</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Patients.php">
+                <i class="bi bi-circle"></i><span>Add Patients</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+       <!-- End Tables Nav -->
+
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Nurses</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Nurses.php">
+                <i class="bi bi-circle"></i><span>Add Nurses</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Tables Nav -->
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Pharmacists</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Pharmacists.php">
+                <i class="bi bi-circle"></i><span>Add Pharmacists</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Tables Nav -->
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Laboratrists</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Laboratrists.php">
+                <i class="bi bi-circle"></i><span>Add Laboratrists</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Tables Nav -->
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Accountants</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Accountants.php">
+                <i class="bi bi-circle"></i><span>Add Accountants</span>
               </a>
             </li>
           </ul>
@@ -222,7 +349,7 @@
 
     <main id="main" class="main">
       <div class="pagetitle">
-        <h1>Manage Vehicles</h1>
+        <h1>Manage Accountants</h1>
       </div>
       <!-- End Page Title -->
 
@@ -246,7 +373,7 @@
                       aria-controls="home"
                       aria-selected="true"
                     >
-                      Add Vehicle
+                      Add Accountant
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -260,7 +387,7 @@
                       aria-controls="profile"
                       aria-selected="false"
                     >
-                      Edit Vehicle
+                      Edit Accountants
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -274,24 +401,26 @@
                       aria-controls="contact"
                       aria-selected="false"
                     >
-                      Delete Vehicle
+                      Delete Accountants
                     </button>
                   </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="view-all-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#view-all"
-                    type="button"
-                    role="tab"
-                    aria-controls="view-all"
-                    aria-selected="false"
-                  >
-                    View All
-                  </button>
-                </li>
-              </ul>
+
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="view-all-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#view-all"
+                      type="button"
+                      role="tab"
+                      aria-controls="view-all"
+                      aria-selected="false"
+                    >
+                      View All
+                    </button>
+                  </li>
+                </ul>
+
                 <div class="tab-content pt-2" id="myTabContent">
                   <div
                     class="tab-pane fade show active"
@@ -304,7 +433,7 @@
                         <div class="col-md-8 offset-md-2">
                           <div class="col-12">
                             <label for="inputNanme4" class="form-label"
-                              >Vehicle Name</label
+                              >Name</label
                             >
                             <input
                               type="text"
@@ -314,44 +443,32 @@
                           </div>
                           <div class="col-12">
                             <label for="inputEmail4" class="form-label"
-                              >Brand</label
+                              >Contact</label
                             >
                             <input
-                              type="email"
+                              type="text"
                               class="form-control"
                               id="inputEmail4"
                             />
                           </div>
                           <div class="col-12">
-                            <label for="inputPassword4" class="form-label"
-                              >Model</label
+                            <label for="inputNanme4" class="form-label"
+                              >Message</label
                             >
                             <input
-                              type="password"
+                              type="text"
                               class="form-control"
-                              id="inputPassword4"
+                              id="inputNanme4"
                             />
                           </div>
                           <div class="col-12">
-                            <label for="inputAddress" class="form-label"
-                              >Year</label
+                            <label for="inputNanme4" class="form-label"
+                              >Date</label
                             >
                             <input
-                              type="text"
+                              type="date"
                               class="form-control"
-                              id="inputAddress"
-                              placeholder="2022"
-                            />
-                          </div>
-                          <div class="col-12 mb-4">
-                            <label for="inputAddress" class="form-label"
-                              >Price</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputAddress"
-                              placeholder="$3000"
+                              id="inputNanme4"
                             />
                           </div>
 
@@ -379,7 +496,7 @@
                         <div class="col-md-8 offset-md-2">
                           <div class="col-12">
                             <label for="inputNanme4" class="form-label"
-                              >Vehicle Name</label
+                              >Name</label
                             >
                             <input
                               type="text"
@@ -389,73 +506,33 @@
                           </div>
                           <div class="col-12">
                             <label for="inputEmail4" class="form-label"
-                              >Brand</label
+                              >Contact</label
                             >
                             <input
-                              type="email"
+                              type="text"
                               class="form-control"
                               id="inputEmail4"
                             />
                           </div>
                           <div class="col-12">
-                            <label for="inputPassword4" class="form-label"
-                              >Model</label
+                            <label for="inputEmail4" class="form-label"
+                              >Message</label
                             >
                             <input
-                              type="password"
+                              type="text"
                               class="form-control"
-                              id="inputPassword4"
+                              id="inputEmail4"
                             />
                           </div>
                           <div class="col-12">
-                            <label for="inputAddress" class="form-label"
-                              >Year</label
+                            <label for="inputNanme4" class="form-label"
+                              >Date</label
                             >
                             <input
-                              type="text"
+                              type="Date"
                               class="form-control"
-                              id="inputAddress"
-                              placeholder="2022"
+                              id="inputNanme4"
                             />
-                          </div>
-                          <div class="col-12 mb-4">
-                            <label for="inputAddress" class="form-label"
-                              >Price</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputAddress"
-                              placeholder="$2000"
-                            />
-                          </div>
-
-                          <div class="col-12 mb-4">
-                            <label>Availability</label>
-                            <div class="form-check">
-                              <input
-                                class="form-check-input"
-                                type="radio"
-                                name="gridRadios"
-                                id="gridRadios2"
-                                value="option2"
-                              />
-                              <label class="form-check-label" for="gridRadios2">
-                                Yes
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input
-                                class="form-check-input"
-                                type="radio"
-                                name="gridRadios"
-                                id="gridRadios2"
-                                value="option2"
-                              />
-                              <label class="form-check-label" for="gridRadios2">
-                                No
-                              </label>
-                            </div>
                           </div>
 
                           <div class="text-center">
@@ -481,16 +558,18 @@
                       <form class="row g-3 mt-3" action="">
                         <div class="col-md-8 offset-md-2">
                           <label for="vehicleId"
-                            >Select the vehicle to delete</label
+                            >Select The Testimonial To Delete</label
                           >
                           <select
                             class="form-select my-2"
                             name="vehicleId"
                             id="vehicleId"
                           >
-                            <option value="#id1">Lamborghini</option>
-                            <option value="#id2">Jeep</option>
-                            <option value="#id3">Dorge</option>
+                            <option value="#id1">Nana Yaw</option>
+                            <option value="#id2">Dave</option>
+                            <option value="#id3">John</option>
+                            <option value="#id3">M.K</option>
+                            <option value="#id3">Pendy</option>
                           </select>
                         </div>
 
@@ -509,67 +588,66 @@
                 role="tabpanel"
                 aria-labelledby="view-all-tab"
               >
-
                 <div class="container">
                   <div class="row">
                     <div class="col-12">
                       <div class="card">
                         <div class="card-body">
-                          <h5 class="card-title">All Cars</h5>
+                          <h5 class="card-title">All Testimonials</h5>
                           <table class="table table-borderless datatable">
                             <thead>
                               <tr>
-                                <th scope="col">ID</th>
-                                <th scope="col">Cars</th>
-                                <th scope="col">Created At</th>
-                                <th scope="col">Updated At</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Contact</th>
+                                <th scope="col">Message</th>
+                                <th scope="col">Date</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
-                                <th scope="row"><a href="#">#1457</a></th>
-                                <td>Lamborghini</td>
+                                <th scope="row"><a href="#">Nana Yaw</a></th>
+                                <td>0245931671</td>
                                 <td>
                                   <a href="#" class="text-primary"
-                                    >02/08/2022</a
+                                    >I loved your services,FANTASTIC!!</a
                                   >
                                 </td>
-                                <td>09/06/2022</td>
+                                <td>02/09/2022</td>
                               </tr>
                               <tr>
-                                <th scope="row"><a href="#">#1458</a></th>
-                                <td>Dorge</td>
+                                <th scope="row"><a href="#">Dave</a></th>
+                                <td>054108923</td>
                                 <td>
                                   <a href="#" class="text-primary"
-                                    >09/06/2022</a
+                                    >Best Car Rentals ever, Beautiful Services</a
                                   >
                                 </td>
                                 <td>08/02/2022</td>
                               </tr>
                               <tr>
-                                <th scope="row"><a href="#">#1459</a></th>
-                                <td>Bentley</td>
+                                <th scope="row"><a href="#">John</a></th>
+                                <td>023091230</td>
                                 <td>
                                   <a href="#" class="text-primary"
-                                    >09/06/2022</a
+                                    >PERFECT!!, try out this website</a
                                   >
                                 </td>
                                 <td>09/06/2022</td>
                               </tr>
-                                <th scope="row"><a href="#">#1859</a></th>
-                                <td>Rolls Royce</td>
+                                <th scope="row"><a href="#">Pendy</a></th>
+                                <td>020789812</td>
                                 <td>
                                   <a href="#" class="text-primary"
-                                    >09/06/2022</a
+                                    >Terrific Services!!</a
                                   >
                                 </td>
                                 <td>09/06/2022</td>
                               </tr>
-                                <th scope="row"><a href="#">#1849</a></th>
-                                <td>Jeep</td>
+                                <th scope="row"><a href="#">M.K</a></th>
+                                <td>0249091233</td>
                                 <td>
                                   <a href="#" class="text-primary"
-                                    >09/06/2022</a
+                                    >Outstanding Servies, I love your cars!!</a
                                   >
                                 </td>
                                 <td>09/06/2022</td>
@@ -583,6 +661,7 @@
                 </div>
               </div>
             </div>
+
                 <!-- End Default Tabs -->
               </div>
             </div>
@@ -595,10 +674,12 @@
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
       <div class="copyright">
-        &copy; Copyright <strong><span>Hospify App</span></strong
+        &copy; Copyright <strong><span>Ayao Medical Center</span></strong
         >. All Rights Reserved
       </div>
-      <div class="credits">Designed by <a href="#">Group 34</a></div>
+      <div class="credits">
+        Designed by <a href="#">Group 34</a>
+      </div>
     </footer>
     <!-- End Footer -->
 
@@ -608,7 +689,7 @@
       ><i class="bi bi-arrow-up-short"></i
     ></a>
 
-    <!-- JS Files -->
+    <!-- Vendor JS Files -->
     <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/chart.js/chart.umd.js"></script>
@@ -618,7 +699,7 @@
     <script src="assets/vendor/tinymce/tinymce.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
 
-    <!--  Main JS File -->
+    <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>

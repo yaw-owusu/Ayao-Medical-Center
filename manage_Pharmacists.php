@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Hospify App</title>
+    <title>Ayao Medical Center </title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -34,19 +34,18 @@
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
     <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
 
-    <!-- Main CSS File -->
+    <!--  Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
-  
   </head>
 
   <body>
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="index.php" class="logo d-flex align-items-center">
+        <a href="Dashboard.php" class="logo d-flex align-items-center">
           <img src="img/logo.png" alt="" />
-          <span class="d-none d-lg-block">Hospify App</span>
+          <span class="d-none d-lg-block">Ayao Medical Center </span>
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
       </div>
@@ -62,7 +61,7 @@
             >
               <!-- <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle"> -->
               <span class="d-none d-md-block dropdown-toggle ps-2"
-                >Welcome! Nana</span
+                >Welcome! Dr. Yaw</span
               > </a
             ><!-- End Profile Iamge Icon -->
 
@@ -70,7 +69,7 @@
               class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
             >
               <li class="dropdown-header">
-                <h6>Nana Yaw <i class="bi bi-patch-check-fill"></i></h6>
+                <h6> Dr. Yaw <i class="bi bi-patch-check-fill"></i></h6>
                 <span>Administrator</span>
               </li>
               <li>
@@ -111,7 +110,7 @@
     <aside id="sidebar" class="sidebar">
       <ul class="sidebar-nav" id="sidebar-nav">
         <li class="nav-item">
-          <a class="nav-link collapsed" href="index.php">
+          <a class="nav-link collapsed" href="Dashboard.php">
             <i class="bi bi-grid"></i>
             <span>Dashboard</span>
           </a>
@@ -134,7 +133,7 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="manage-admin.php">
+              <a href="manage_Admin.php">
                 <i class="bi bi-circle"></i><span>Add Administrator</span>
               </a>
             </li>
@@ -149,7 +148,7 @@
             data-bs-toggle="collapse"
             href="#"
           >
-            <i class="bi bi-people"></i><span>Users</span
+            <i class="bi bi-people"></i><span>Doctors</span
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
@@ -158,8 +157,133 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="manage-users.php">
-                <i class="bi bi-circle"></i><span>Manage Users</span>
+              <a href="manage_Doctors.php">
+                <i class="bi bi-circle"></i><span>Add Doctors</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+       <!-- End Tables Nav -->
+
+       <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Patients</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Patients.php">
+                <i class="bi bi-circle"></i><span>Add Patients</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+       <!-- End Tables Nav -->
+
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Nurses</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Nurses.php">
+                <i class="bi bi-circle"></i><span>Add Nurses</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Tables Nav -->
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Pharmacists</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Pharmacists.php">
+                <i class="bi bi-circle"></i><span>Add Pharmacists</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Tables Nav -->
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Laboratrists</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Laboratrists.php">
+                <i class="bi bi-circle"></i><span>Add Laboratrists</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Tables Nav -->
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Accountants</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Accountants.php">
+                <i class="bi bi-circle"></i><span>Add Accountants</span>
               </a>
             </li>
           </ul>
@@ -224,7 +348,7 @@
 
     <main id="main" class="main">
       <div class="pagetitle">
-        <h1>Manage Users</h1>
+        <h1>Manage Pharmacists</h1>
       </div>
       <!-- End Page Title -->
 
@@ -248,7 +372,7 @@
                       aria-controls="home"
                       aria-selected="true"
                     >
-                      Add
+                      Add Pharmacists
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -262,7 +386,7 @@
                       aria-controls="profile"
                       aria-selected="false"
                     >
-                      Edit
+                      Edit Pharmacists
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -276,7 +400,7 @@
                       aria-controls="contact"
                       aria-selected="false"
                     >
-                      Delete
+                      Delete Pharmacists
                     </button>
                   </li>
 
@@ -455,7 +579,7 @@
                                 <th scope="col">Name</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Phone Number</th>
-                                <th scope="col">Role</th>
+                                <th scope="col">Subscribe</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -471,7 +595,7 @@
 
                                 <td>
                                   <span class="badge bg-success"
-                                    >User</span
+                                    >Yes</span
                                   >
                                 </td>
                               </tr>
@@ -486,8 +610,8 @@
                                 <td>0268157666</td>
 
                                 <td>
-                                  <span class="badge bg-success"
-                                    >User</span
+                                  <span class="badge bg-danger"
+                                    >No</span
                                   >
                                 </td>
                               </tr>
@@ -503,7 +627,7 @@
 
                                 <td>
                                   <span class="badge bg-success"
-                                    >User</span
+                                    >Yes</span
                                   >
                                 </td>
                               </tr>
@@ -518,8 +642,8 @@
                                 <td>0208357666</td>
 
                                 <td>
-                                  <span class="badge bg-success"
-                                    >User</span
+                                  <span class="badge bg-danger"
+                                    >No</span
                                   >
                                 </td>
                               </tr>
@@ -545,11 +669,14 @@
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
       <div class="copyright">
-        &copy; Copyright <strong><span>Hospify App</span></strong
+        &copy; Copyright <strong><span>Ayao Medical Center</span></strong
         >. All Rights Reserved
       </div>
       <div class="credits">
-        
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
         Designed by <a href="#">Group 34</a>
       </div>
     </footer>

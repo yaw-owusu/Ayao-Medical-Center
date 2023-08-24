@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Hospify App</title>
+    <title>Ayao Medical Center </title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -42,9 +42,9 @@
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="index.php" class="logo d-flex align-items-center">
+        <a href="Dashboard.php" class="logo d-flex align-items-center">
           <img src="img/logo.png" alt="" />
-          <span class="d-none d-lg-block">Swift Car Rentals</span>
+          <span class="d-none d-lg-block">Ayao Medical Center </span>
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
       </div>
@@ -60,7 +60,7 @@
             >
               <!-- <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle"> -->
               <span class="d-none d-md-block dropdown-toggle ps-2"
-                >Welcome! Nana</span
+                >Welcome! Dr. Yaw</span
               > </a
             ><!-- End Profile Iamge Icon -->
 
@@ -68,7 +68,7 @@
               class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
             >
               <li class="dropdown-header">
-                <h6>Nana Yaw <i class="bi bi-patch-check-fill"></i></h6>
+                <h6> Dr. Yaw <i class="bi bi-patch-check-fill"></i></h6>
                 <span>Administrator</span>
               </li>
               <li>
@@ -111,7 +111,7 @@
     <aside id="sidebar" class="sidebar">
       <ul class="sidebar-nav" id="sidebar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="index.php">
+          <a class="nav-link" href="Dashboard.php">
             <i class="bi bi-grid"></i>
             <span>Dashboard</span>
           </a>
@@ -134,7 +134,7 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="manage-admin.php">
+              <a href="manage_Admin.php">
                 <i class="bi bi-circle"></i><span>Add Administrator</span>
               </a>
             </li>
@@ -149,7 +149,7 @@
             data-bs-toggle="collapse"
             href="#"
           >
-            <i class="bi bi-people"></i><span>Users</span
+            <i class="bi bi-people"></i><span>Doctors</span
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
@@ -158,13 +158,140 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="manage-users.php">
-                <i class="bi bi-circle"></i><span>Add User</span>
+              <a href="manage_Doctors.php">
+                <i class="bi bi-circle"></i><span>Add Doctors</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+       <!-- End Tables Nav -->
+
+
+       <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Patients</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Patients.php">
+                <i class="bi bi-circle"></i><span>Add Patients</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+       <!-- End Tables Nav -->
+
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Nurses</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Nurses.php">
+                <i class="bi bi-circle"></i><span>Add Nurses</span>
               </a>
             </li>
           </ul>
         </li>
         <!-- End Tables Nav -->
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Pharmacists</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Pharmacists.php">
+                <i class="bi bi-circle"></i><span>Add Pharmacists</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Tables Nav -->
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Laboratrists</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Laboratrists.php">
+                <i class="bi bi-circle"></i><span>Add Laboratrists</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Tables Nav -->
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Accountants</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Accountants.php">
+                <i class="bi bi-circle"></i><span>Add Accountants</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Tables Nav -->
+
 
         <li class="nav-item">
           <a
@@ -209,6 +336,7 @@
           </ul>
         </li>
         <!-- End Charts Nav -->
+        
 
         <!-- <li class="nav-heading">Pages</li> -->
 
@@ -244,16 +372,16 @@
               <div class="col-xxl-4 col-md-4">
                 <div class="card info-card sales-card">
                   <div class="card-body">
-                    <h5 class="card-title">Cars</h5>
+                    <h5 class="card-title">Doctors</h5>
 
                     <div class="d-flex align-items-center">
                       <div
                         class="card-icon rounded-circle d-flex align-items-center justify-content-center"
                       >
-                        <i class="bi bi-car-front-fill"></i>
+                        <i class="bi  bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>5</h6>
+                        <h6>10</h6>
                       </div>
                     </div>
                   </div>
@@ -265,16 +393,16 @@
               <div class="col-xxl-4 col-md-4">
                 <div class="card info-card revenue-card">
                   <div class="card-body">
-                    <h5 class="card-title">Brands</h5>
+                    <h5 class="card-title">Nurses</h5>
 
                     <div class="d-flex align-items-center">
                       <div
                         class="card-icon rounded-circle d-flex align-items-center justify-content-center"
                       >
-                        <i class="bi bi-ubuntu"></i>
+                        <i class="bi  bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>5</h6>
+                        <h6>25</h6>
                       </div>
                     </div>
                   </div>
@@ -286,7 +414,7 @@
               <div class="col-xxl-4 col-md-4">
                 <div class="card info-card customers-card">
                   <div class="card-body">
-                    <h5 class="card-title">Registered Users</h5>
+                    <h5 class="card-title">Pharmacists</h5>
 
                     <div class="d-flex align-items-center">
                       <div
@@ -295,7 +423,7 @@
                         <i class="bi bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>4</h6>
+                        <h6>15</h6>
                       </div>
                     </div>
                   </div>
@@ -306,16 +434,16 @@
               <div class="col-xxl-4 col-md-4">
                 <div class="card info-card customers-card">
                   <div class="card-body">
-                    <h5 class="card-title">Testimonials</h5>
+                    <h5 class="card-title">Laboratrists</h5>
 
                     <div class="d-flex align-items-center">
                       <div
                         class="card-icon rounded-circle d-flex align-items-center justify-content-center"
                       >
-                        <i class="bi bi-card-list"></i>
+                        <i class="bi  bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>5</h6>
+                        <h6>15</h6>
                       </div>
                     </div>
                   </div>
@@ -325,13 +453,13 @@
               <div class="col-xxl-4 col-md-4">
                 <div class="card info-card customers-card">
                   <div class="card-body">
-                    <h5 class="card-title">Subscribers</h5>
+                    <h5 class="card-title">Accountants</h5>
 
                     <div class="d-flex align-items-center">
                       <div
                         class="card-icon rounded-circle d-flex align-items-center justify-content-center"
                       >
-                        <i class="bi bi-bell"></i>
+                        <i class="bi bi-people"></i>
                       </div>
                       <div class="ps-3">
                         <h6>12</h6>
@@ -344,16 +472,16 @@
               <div class="col-xxl-4 col-md-4">
                 <div class="card info-card customers-card">
                   <div class="card-body">
-                    <h5 class="card-title">Bookings</h5>
+                    <h5 class="card-title">Patients</h5>
 
                     <div class="d-flex align-items-center">
                       <div
                         class="card-icon rounded-circle d-flex align-items-center justify-content-center"
                       >
-                        <i class="bi bi-book"></i>
+                        <i class="bi  bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>3</h6>
+                        <h6>30</h6>
                       </div>
                     </div>
                   </div>
@@ -467,7 +595,7 @@
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
       <div class="copyright">
-        &copy; Copyright <strong><span>Swift Car Rentals</span></strong
+        &copy; Copyright <strong><span>Ayao Medical Center</span></strong
         >. All Rights Reserved
       </div>
       <div class="credits">Designed by <a href="#">Group 34</a></div>
