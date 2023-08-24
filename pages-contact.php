@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Hospify App</title>
+    <title>Ayao Medical Center </title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -44,7 +44,7 @@
       <div class="d-flex align-items-center justify-content-between">
         <a href="index.php" class="logo d-flex align-items-center">
           <img src="img/logo.png" alt="" />
-          <span class="d-none d-lg-block">Hospify App</span>
+          <span class="d-none d-lg-block">Ayao Medical Center </span>
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
       </div>
@@ -60,7 +60,7 @@
             >
               <!-- <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle"> -->
               <span class="d-none d-md-block dropdown-toggle ps-2"
-                >Welcome! Nana</span
+                >Welcome! Dr. Yaw</span
               > </a
             ><!-- End Profile Iamge Icon -->
 
@@ -68,7 +68,7 @@
               class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
             >
               <li class="dropdown-header">
-                <h6>Nana Yaw <i class="bi bi-patch-check-fill"></i></h6>
+                <h6>Dr. Yaw <i class="bi bi-patch-check-fill"></i></h6>
                 <span>Administrator</span>
               </li>
               <li>

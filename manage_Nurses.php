@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Hospify App</title>
+    <title>Ayao Medical Center </title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -19,7 +19,7 @@
       rel="stylesheet"
     />
 
-    <!-- CSS Files -->
+    <!--  CSS Files -->
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
@@ -34,19 +34,19 @@
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
     <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
 
-    <!--Main CSS File -->
+    <!--  Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
-   
+  
   </head>
 
   <body>
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="index.php" class="logo d-flex align-items-center">
+        <a href="Dashboard.php" class="logo d-flex align-items-center">
           <img src="img/logo.png" alt="" />
-          <span class="d-none d-lg-block">Hospify App</span>
+          <span class="d-none d-lg-block">Ayao Medical Center </span>
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
       </div>
@@ -62,7 +62,7 @@
             >
               <!-- <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle"> -->
               <span class="d-none d-md-block dropdown-toggle ps-2"
-                >Welcome! Nana</span
+                >Welcome! Dr. Yaw</span
               > </a
             ><!-- End Profile Iamge Icon -->
 
@@ -70,7 +70,7 @@
               class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
             >
               <li class="dropdown-header">
-                <h6>Nana Yaw <i class="bi bi-patch-check-fill"></i></h6>
+                <h6> Dr. Yaw <i class="bi bi-patch-check-fill"></i></h6>
                 <span>Administrator</span>
               </li>
               <li>
@@ -111,7 +111,7 @@
     <aside id="sidebar" class="sidebar">
       <ul class="sidebar-nav" id="sidebar-nav">
         <li class="nav-item">
-          <a class="nav-link collapsed" href="index.php">
+          <a class="nav-link collapsed" href="Dashboard.php">
             <i class="bi bi-grid"></i>
             <span>Dashboard</span>
           </a>
@@ -134,13 +134,14 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="manage-admin.php">
+              <a href="manage_Admin.php">
                 <i class="bi bi-circle"></i><span>Add Administrator</span>
               </a>
             </li>
           </ul>
         </li>
         <!-- End Forms Nav -->
+
 
         <li class="nav-item">
           <a
@@ -149,7 +150,7 @@
             data-bs-toggle="collapse"
             href="#"
           >
-            <i class="bi bi-people"></i><span>Users</span
+            <i class="bi bi-people"></i><span>Doctors</span
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
@@ -158,13 +159,139 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="manage-users.php">
-                <i class="bi bi-circle"></i><span>Manage Users</span>
+              <a href="manage_Doctors.php">
+                <i class="bi bi-circle"></i><span>Add Doctors</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+       <!-- End Tables Nav -->
+
+       <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Patients</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Patients.php">
+                <i class="bi bi-circle"></i><span>Add Patients</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+       <!-- End Tables Nav -->
+
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Nurses</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Nurses.php">
+                <i class="bi bi-circle"></i><span>Add Nurses</span>
               </a>
             </li>
           </ul>
         </li>
         <!-- End Tables Nav -->
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Pharmacists</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Pharmacists.php">
+                <i class="bi bi-circle"></i><span>Add Pharmacists</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Tables Nav -->
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Laboratrists</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Laboratrists.php">
+                <i class="bi bi-circle"></i><span>Add Laboratrists</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Tables Nav -->
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Accountants</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Accountants.php">
+                <i class="bi bi-circle"></i><span>Add Accountants</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Tables Nav -->
+
 
         <li class="nav-item">
           <a
@@ -224,7 +351,7 @@
 
     <main id="main" class="main">
       <div class="pagetitle">
-        <h1>Manage Testimonials</h1>
+        <h1>Manage Nurses</h1>
       </div>
       <!-- End Page Title -->
 
@@ -248,7 +375,7 @@
                       aria-controls="home"
                       aria-selected="true"
                     >
-                      Add
+                      Add Nurses
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -262,7 +389,7 @@
                       aria-controls="profile"
                       aria-selected="false"
                     >
-                      Edit
+                      Edit Nurses
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -276,7 +403,7 @@
                       aria-controls="contact"
                       aria-selected="false"
                     >
-                      Delete
+                      Delete Nurses
                     </button>
                   </li>
 
@@ -308,7 +435,7 @@
                         <div class="col-md-8 offset-md-2">
                           <div class="col-12">
                             <label for="inputNanme4" class="form-label"
-                              >Name</label
+                              >Brand ID</label
                             >
                             <input
                               type="text"
@@ -318,22 +445,12 @@
                           </div>
                           <div class="col-12">
                             <label for="inputEmail4" class="form-label"
-                              >Contact</label
+                              >Brand Name</label
                             >
                             <input
                               type="text"
                               class="form-control"
                               id="inputEmail4"
-                            />
-                          </div>
-                          <div class="col-12">
-                            <label for="inputNanme4" class="form-label"
-                              >Message</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputNanme4"
                             />
                           </div>
                           <div class="col-12">
@@ -371,7 +488,7 @@
                         <div class="col-md-8 offset-md-2">
                           <div class="col-12">
                             <label for="inputNanme4" class="form-label"
-                              >Name</label
+                              >Brand ID</label
                             >
                             <input
                               type="text"
@@ -381,17 +498,7 @@
                           </div>
                           <div class="col-12">
                             <label for="inputEmail4" class="form-label"
-                              >Contact</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputEmail4"
-                            />
-                          </div>
-                          <div class="col-12">
-                            <label for="inputEmail4" class="form-label"
-                              >Message</label
+                              >Brand Name</label
                             >
                             <input
                               type="text"
@@ -401,7 +508,7 @@
                           </div>
                           <div class="col-12">
                             <label for="inputNanme4" class="form-label"
-                              >Date</label
+                              >Date Updated</label
                             >
                             <input
                               type="Date"
@@ -433,18 +540,18 @@
                       <form class="row g-3 mt-3" action="">
                         <div class="col-md-8 offset-md-2">
                           <label for="vehicleId"
-                            >Select The Testimonial To Delete</label
+                            >Select The Brand To Delete</label
                           >
                           <select
                             class="form-select my-2"
                             name="vehicleId"
                             id="vehicleId"
                           >
-                            <option value="#id1">Nana Yaw</option>
-                            <option value="#id2">Dave</option>
-                            <option value="#id3">John</option>
-                            <option value="#id3">M.K</option>
-                            <option value="#id3">Pendy</option>
+                            <option value="#id1">Lamborghini</option>
+                            <option value="#id2">Dorge</option>
+                            <option value="#id3">Bentley</option>
+                            <option value="#id3">Rolls Royce</option>
+                            <option value="#id3">Jeep</option>
                           </select>
                         </div>
 
@@ -468,61 +575,61 @@
                     <div class="col-12">
                       <div class="card">
                         <div class="card-body">
-                          <h5 class="card-title">All Testimonials</h5>
+                          <h5 class="card-title">All Brands</h5>
                           <table class="table table-borderless datatable">
                             <thead>
                               <tr>
-                                <th scope="col">Name</th>
-                                <th scope="col">Contact</th>
-                                <th scope="col">Message</th>
-                                <th scope="col">Date</th>
+                                <th scope="col">Brand ID</th>
+                                <th scope="col">Brand</th>
+                                <th scope="col">Created At</th>
+                                <th scope="col">Updated At</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
-                                <th scope="row"><a href="#">Nana Yaw</a></th>
-                                <td>0245931671</td>
+                                <th scope="row"><a href="#">#1457</a></th>
+                                <td>Lamborghini</td>
                                 <td>
                                   <a href="#" class="text-primary"
-                                    >I loved your services,FANTASTIC!!</a
+                                    >02/08/2022</a
                                   >
                                 </td>
-                                <td>02/09/2022</td>
+                                <td>09/06/2022</td>
                               </tr>
                               <tr>
-                                <th scope="row"><a href="#">Dave</a></th>
-                                <td>054108923</td>
+                                <th scope="row"><a href="#">#1458</a></th>
+                                <td>Dorge</td>
                                 <td>
                                   <a href="#" class="text-primary"
-                                    >Best Car Rentals ever, Beautiful Services</a
+                                    >09/06/2022</a
                                   >
                                 </td>
                                 <td>08/02/2022</td>
                               </tr>
                               <tr>
-                                <th scope="row"><a href="#">John</a></th>
-                                <td>023091230</td>
+                                <th scope="row"><a href="#">#1459</a></th>
+                                <td>Bentley</td>
                                 <td>
                                   <a href="#" class="text-primary"
-                                    >PERFECT!!, try out this website</a
+                                    >09/06/2022</a
                                   >
                                 </td>
                                 <td>09/06/2022</td>
                               </tr>
-                                <th scope="row"><a href="#">Pendy</a></th>
-                                <td>020789812</td>
+                                <th scope="row"><a href="#">#1859</a></th>
+                                <td>Rolls Royce</td>
                                 <td>
                                   <a href="#" class="text-primary"
-                                    >Terrific Services!!</a
+                                    >09/06/2022</a
                                   >
                                 </td>
                                 <td>09/06/2022</td>
                               </tr>
-                                <th scope="row"><a href="#">M.K</a></th>
-                                <td>0249091233</td>
+                                <th scope="row"><a href="#">#1849</a></th>
+                                <td>Jeep</td>
                                 <td>
                                   <a href="#" class="text-primary"
-                                    >Outstanding Servies, I love your cars!!</a
+                                    >09/06/2022</a
                                   >
                                 </td>
                                 <td>09/06/2022</td>
@@ -549,10 +656,11 @@
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
       <div class="copyright">
-        &copy; Copyright <strong><span>Hospify App</span></strong
+        &copy; Copyright <strong><span>Ayao Medical Center</span></strong
         >. All Rights Reserved
       </div>
       <div class="credits">
+      
         Designed by <a href="#">Group 34</a>
       </div>
     </footer>
@@ -564,7 +672,7 @@
       ><i class="bi bi-arrow-up-short"></i
     ></a>
 
-    <!-- Vendor JS Files -->
+    <!-- JS Files -->
     <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/chart.js/chart.umd.js"></script>
@@ -574,7 +682,7 @@
     <script src="assets/vendor/tinymce/tinymce.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
 
-    <!-- Main JS File -->
+    <!--Main JS File -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Hospify App</title>
+    <title>Ayao Medical Center </title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -19,7 +19,7 @@
       rel="stylesheet"
     />
 
-    <!-- CSS Files -->
+    <!-- Vendor CSS Files -->
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
@@ -37,16 +37,16 @@
     <!-- Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
-   
+  
   </head>
 
   <body>
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="index.php" class="logo d-flex align-items-center">
+        <a href="Dashboard.php" class="logo d-flex align-items-center">
           <img src="img/logo.png" alt="" />
-          <span class="d-none d-lg-block">Hospify App</span>
+          <span class="d-none d-lg-block">Ayao Medical Center </span>
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
       </div>
@@ -62,7 +62,7 @@
             >
               <!-- <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle"> -->
               <span class="d-none d-md-block dropdown-toggle ps-2"
-                >Welcome! Nana</span
+                >Welcome! Dr. Yaw</span
               > </a
             ><!-- End Profile Iamge Icon -->
 
@@ -70,7 +70,7 @@
               class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
             >
               <li class="dropdown-header">
-                <h6>Nana Yaw <i class="bi bi-patch-check-fill"></i></h6>
+                <h6>Dr. Yaw <i class="bi bi-patch-check-fill"></i></h6>
                 <span>Administrator</span>
               </li>
               <li>
@@ -111,7 +111,7 @@
     <aside id="sidebar" class="sidebar">
       <ul class="sidebar-nav" id="sidebar-nav">
         <li class="nav-item">
-          <a class="nav-link collapsed" href="index.php">
+          <a class="nav-link collapsed" href="Dashboard.php">
             <i class="bi bi-grid"></i>
             <span>Dashboard</span>
           </a>
@@ -134,13 +134,14 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="manage-admin.php">
+              <a href="manage_Admin.php">
                 <i class="bi bi-circle"></i><span>Add Administrator</span>
               </a>
             </li>
           </ul>
         </li>
         <!-- End Forms Nav -->
+
 
         <li class="nav-item">
           <a
@@ -149,7 +150,7 @@
             data-bs-toggle="collapse"
             href="#"
           >
-            <i class="bi bi-people"></i><span>Users</span
+            <i class="bi bi-people"></i><span>Doctors</span
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
@@ -158,13 +159,137 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="manage-users.php">
-                <i class="bi bi-circle"></i><span>Manage Users</span>
+              <a href="manage_Doctors.php">
+                <i class="bi bi-circle"></i><span>Add Doctors</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+       <!-- End Tables Nav -->
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Patients</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Patients.php">
+                <i class="bi bi-circle"></i><span>Add Patients</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+       <!-- End Tables Nav -->
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Nurses</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Nurses.php">
+                <i class="bi bi-circle"></i><span>Add Nurses</span>
               </a>
             </li>
           </ul>
         </li>
         <!-- End Tables Nav -->
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Pharmacists</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Pharmacists.php">
+                <i class="bi bi-circle"></i><span>Add Pharmacists</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Tables Nav -->
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Laboratrists</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Laboratrists.php">
+                <i class="bi bi-circle"></i><span>Add Laboratrists</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Tables Nav -->
+
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Accountants</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Accountants.php">
+                <i class="bi bi-circle"></i><span>Add Accountants</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Tables Nav -->
+
 
         <li class="nav-item">
           <a
@@ -224,7 +349,7 @@
 
     <main id="main" class="main">
       <div class="pagetitle">
-        <h1>Manage Bookings</h1>
+        <h1>Manage Patients</h1>
       </div>
       <!-- End Page Title -->
 
@@ -248,7 +373,7 @@
                       aria-controls="home"
                       aria-selected="true"
                     >
-                      Add
+                      Add Patients
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -262,7 +387,7 @@
                       aria-controls="profile"
                       aria-selected="false"
                     >
-                      Edit
+                      Edit Patients
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -276,7 +401,7 @@
                       aria-controls="contact"
                       aria-selected="false"
                     >
-                      Delete
+                      Delete Patients
                     </button>
                   </li>
 
@@ -317,45 +442,25 @@
                             />
                           </div>
                           <div class="col-12">
-                            <label for="inputNanme4" class="form-label"
-                              >Contact</label
+                            <label for="inputEmail4" class="form-label"
+                              >Email</label
                             >
                             <input
-                              type="text"
+                              type="email"
+                              class="form-control"
+                              id="inputEmail4"
+                            />
+                          </div>
+                          <div class="col-12">
+                            <label for="inputNanme4" class="form-label"
+                              >Phone Number</label
+                            >
+                            <input
+                              type="password"
                               class="form-control"
                               id="inputNanme4"
                             />
-                        </div>
-                        <div class="col-12">
-                          <label for="inputNanme4" class="form-label"
-                            >Car Brand</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="inputNanme4"
-                          />
-                        </div>
-                        <div class="col-12">
-                          <label for="inputNanme4" class="form-label"
-                            >Model</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="inputNanme4"
-                          />
-                        </div>
-                        <div class="col-12">
-                          <label for="inputNanme4" class="form-label"
-                            >Year</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="inputNanme4"
-                          />
-                        </div>
+                          </div>
 
                           <div class="text-center">
                             <button type="submit" class="btn btn-primary">
@@ -390,41 +495,21 @@
                             />
                           </div>
                           <div class="col-12">
-                            <label for="inputNanme4" class="form-label"
-                              >Contact</label
+                            <label for="inputEmail4" class="form-label"
+                              >Email</label
                             >
                             <input
                               type="email"
                               class="form-control"
-                              id="inputNanme4"
+                              id="inputEmail4"
                             />
                           </div>
                           <div class="col-12">
                             <label for="inputNanme4" class="form-label"
-                              >Brand</label
+                              >Phone Number</label
                             >
                             <input
-                              type="text"
-                              class="form-control"
-                              id="inputNanme4"
-                            />
-                          </div>
-                          <div class="col-12">
-                            <label for="inputNanme4" class="form-label"
-                              >Model</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputNanme4"
-                            />
-                          </div>
-                          <div class="col-12">
-                            <label for="inputNanme4" class="form-label"
-                              >Year</label
-                            >
-                            <input
-                              type="text"
+                              type="password"
                               class="form-control"
                               id="inputNanme4"
                             />
@@ -453,7 +538,7 @@
                       <form class="row g-3 mt-3" action="">
                         <div class="col-md-8 offset-md-2">
                           <label for="vehicleId"
-                            >Select The Booking To Delete</label
+                            >Select the User to delete</label
                           >
                           <select
                             class="form-select my-2"
@@ -487,72 +572,80 @@
                     <div class="col-12">
                       <div class="card">
                         <div class="card-body">
-                          <h5 class="card-title">All Bookings</h5>
+                          <h5 class="card-title">All Users</h5>
                           <table class="table table-borderless datatable">
                             <thead>
                               <tr>
+                                <th scope="col">User ID</th>
                                 <th scope="col">Name</th>
-                                <th scope="col">Contact</th>
-                                <th scope="col">Brand</th>
-                                <th scope="col">Model</th>
-                                <th scope="col">Year</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Phone Number</th>
+                                <th scope="col">Role</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
-                                <th scope="row"><a href="#">Nana Yaw</a></th>
-                                <td>0240918287</td>
+                                <th scope="row"><a href="#">#2457</a></th>
+                                <td>Nana Yaw</td>
                                 <td>
                                   <a href="#" class="text-primary"
-                                    >Lamborghini</a
+                                    >user@mail.com</a
                                   >
                                 </td>
-                                <td>Urus</td>
+                                <td>0558157666</td>
 
                                 <td>
-                                    2022
+                                  <span class="badge bg-success"
+                                    >User</span
+                                  >
                                 </td>
                               </tr>
                               <tr>
-                                <th scope="row"><a href="#">Dave</a></th>
-                                <td>023891827</td>
+                                <th scope="row"><a href="#">#2458</a></th>
+                                <td>David</td>
                                 <td>
                                   <a href="#" class="text-primary"
-                                    >Dorge</a
+                                    >david@mail.com</a
                                   >
                                 </td>
-                                <td>Hellcat</td>
+                                <td>0268157666</td>
 
                                 <td>
-                                    2021
+                                  <span class="badge bg-success"
+                                    >User</span
+                                  >
                                 </td>
                               </tr>
                               <tr>
-                                <th scope="row"><a href="#">Pendy</a></th>
-                                <td>023898762</td>
+                                <th scope="row"><a href="#">#2459</a></th>
+                                <td>John Wick</td>
                                 <td>
                                   <a href="#" class="text-primary"
-                                    >Jeep</a
+                                    >johnwick@mail.com</a
                                   >
                                 </td>
-                                <td>Trackhawk</td>
+                                <td>0208157666</td>
 
                                 <td>
-                                    2022
+                                  <span class="badge bg-success"
+                                    >User</span
+                                  >
                                 </td>
                               </tr>
                               <tr>
-                                <th scope="row"><a href="#">M.K</a></th>
-                                <td>023919827</td>
+                                <th scope="row"><a href="#">#2059</a></th>
+                                <td>Pendy</td>
                                 <td>
                                   <a href="#" class="text-primary"
-                                    >Rolls Royce</a
+                                    >pendy@mail.com</a
                                   >
                                 </td>
-                                <td>Wraith</td>
+                                <td>0208357666</td>
 
                                 <td>
-                                    2021
+                                  <span class="badge bg-success"
+                                    >User</span
+                                  >
                                 </td>
                               </tr>
                             </tbody>
@@ -577,11 +670,11 @@
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
       <div class="copyright">
-        &copy; Copyright <strong><span>Hospify App</span></strong
+        &copy; Copyright <strong><span>Ayao Medical Center </span></strong
         >. All Rights Reserved
       </div>
       <div class="credits">
-   
+        
         Designed by <a href="#">Group 34</a>
       </div>
     </footer>
@@ -593,7 +686,7 @@
       ><i class="bi bi-arrow-up-short"></i
     ></a>
 
-    <!-- JS Files -->
+    <!-- Vendor JS Files -->
     <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/chart.js/chart.umd.js"></script>
