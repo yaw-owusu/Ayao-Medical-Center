@@ -1,3 +1,10 @@
+<?php
+
+  include_once("./model/connection.php");
+  include_once("./model/doctors.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -381,7 +388,7 @@
                         <i class="bi  bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>10</h6>
+                        <h6><?php echo get_doctors_count(); ?></h6>
                       </div>
                     </div>
                   </div>
