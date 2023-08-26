@@ -2,6 +2,11 @@
 
   include_once("./model/connection.php");
   include_once("./model/doctors.php");
+  include_once("./model/laboratrists.php");
+  include_once("./model/nurses.php");
+  include_once("./model/patients.php");
+  include_once("./model/pharmacists.php");
+  include_once("./model/accountants.php");
 
 ?>
 
@@ -409,7 +414,7 @@
                         <i class="bi  bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>25</h6>
+                        <h6><?php echo get_nurses_count(); ?></h6>
                       </div>
                     </div>
                   </div>
@@ -430,7 +435,7 @@
                         <i class="bi bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>15</h6>
+                        <h6><?php echo get_pharmacists_count(); ?></h6>
                       </div>
                     </div>
                   </div>
@@ -450,7 +455,7 @@
                         <i class="bi  bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>15</h6>
+                        <h6><?php echo get_laboratrists_count(); ?></h6>
                       </div>
                     </div>
                   </div>
@@ -469,7 +474,7 @@
                         <i class="bi bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>12</h6>
+                        <h6><?php echo get_accountants_count(); ?></h6>
                       </div>
                     </div>
                   </div>
@@ -488,7 +493,7 @@
                         <i class="bi  bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>30</h6>
+                        <h6><?php echo get_patients_count(); ?></h6>
                       </div>
                     </div>
                   </div>
