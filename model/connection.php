@@ -1,6 +1,6 @@
 <?php
 
-$dsn = 'mysql:host=localhost;dbname=ayao-medical -center';
+$dsn = 'mysql:host=localhost;dbname=ayao-medical-center';
 $username = 'root';
 $password = '';
 
