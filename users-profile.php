@@ -42,7 +42,7 @@
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="index.php" class="logo d-flex align-items-center">
+        <a href="Dashboard.php" class="logo d-flex align-items-center">
           <img src="img/logo.png" alt="" />
           <span class="d-none d-lg-block">Ayao Medical Center </span>
         </a>
@@ -121,7 +121,7 @@
     <aside id="sidebar" class="sidebar">
       <ul class="sidebar-nav" id="sidebar-nav">
         <li class="nav-item">
-          <a class="nav-link collapsed" href="index.php">
+          <a class="nav-link collapsed" href="Dashboard.php">
             <i class="bi bi-grid"></i>
             <span>Dashboard</span>
           </a>
