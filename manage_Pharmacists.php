@@ -431,33 +431,33 @@
                       <form class="row g-3 mt-3">
                         <div class="col-md-8 offset-md-2">
                           <div class="col-12">
-                            <label for="inputNanme4" class="form-label"
+                            <label for="home_inputName" class="form-label"
                               >Name</label
                             >
                             <input
                               type="text"
                               class="form-control"
-                              id="inputNanme4"
+                              id="home_inputName"
                             />
                           </div>
                           <div class="col-12">
-                            <label for="inputEmail4" class="form-label"
+                            <label for="home_inputEmail" class="form-label"
                               >Email</label
                             >
                             <input
                               type="email"
                               class="form-control"
-                              id="inputEmail4"
+                              id="home_inputEmail"
                             />
                           </div>
                           <div class="col-12">
-                            <label for="inputNanme4" class="form-label"
+                            <label for="home_inputPhoneNumber" class="form-label"
                               >Phone Number</label
                             >
                             <input
                               type="password"
                               class="form-control"
-                              id="inputNanme4"
+                              id="home_inputPhoneNumber"
                             />
                           </div>
 
@@ -484,33 +484,33 @@
                       <form class="row g-3 mt-3">
                         <div class="col-md-8 offset-md-2">
                           <div class="col-12">
-                            <label for="inputNanme4" class="form-label"
+                            <label for="profile_inputName" class="form-label"
                               >Name</label
                             >
                             <input
                               type="text"
                               class="form-control"
-                              id="inputNanme4"
+                              id="profile_inputName"
                             />
                           </div>
                           <div class="col-12">
-                            <label for="inputEmail4" class="form-label"
+                            <label for="profile_inputEmail" class="form-label"
                               >Email</label
                             >
                             <input
                               type="email"
                               class="form-control"
-                              id="inputEmail4"
+                              id="profile_inputEmail"
                             />
                           </div>
                           <div class="col-12">
-                            <label for="inputNanme4" class="form-label"
+                            <label for="profile_inputPhoneNumber" class="form-label"
                               >Phone Number</label
                             >
                             <input
                               type="password"
                               class="form-control"
-                              id="inputNanme4"
+                              id="profile_inputPhoneNumber"
                             />
                           </div>
 
@@ -536,13 +536,13 @@
                     <div class="container">
                       <form class="row g-3 mt-3" action="">
                         <div class="col-md-8 offset-md-2">
-                          <label for="vehicleId"
-                            >Select the User to delete</label
+                          <label for="contact_pharmacistId"
+                            >Select the pharmacist to delete</label
                           >
                           <select
                             class="form-select my-2"
                             name="vehicleId"
-                            id="vehicleId"
+                            id="contact_pharmacistId"
                           >
                             <option value="#id1">Nana Yaw</option>
                             <option value="#id2">Dave</option>
@@ -571,82 +571,24 @@
                     <div class="col-12">
                       <div class="card">
                         <div class="card-body">
-                          <h5 class="card-title">All Users</h5>
+                          <h5 class="card-title">All Pharmacists</h5>
                           <table class="table table-borderless datatable">
                             <thead>
                               <tr>
-                                <th scope="col">User ID</th>
-                                <th scope="col">Name</th>
+                               <th scope="col">Name</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Phone Number</th>
-                                <th scope="col">Subscribe</th>
+                                <th scope="col">Role</th>
                               </tr>
                             </thead>
                             <tbody>
-                              <tr>
-                                <th scope="row"><a href="#">#2457</a></th>
-                                <td>Nana Yaw</td>
-                                <td>
-                                  <a href="#" class="text-primary"
-                                    >user@mail.com</a
-                                  >
-                                </td>
-                                <td>0558157666</td>
-
-                                <td>
-                                  <span class="badge bg-success"
-                                    >Yes</span
-                                  >
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row"><a href="#">#2458</a></th>
-                                <td>David</td>
-                                <td>
-                                  <a href="#" class="text-primary"
-                                    >david@mail.com</a
-                                  >
-                                </td>
-                                <td>0268157666</td>
-
-                                <td>
-                                  <span class="badge bg-danger"
-                                    >No</span
-                                  >
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row"><a href="#">#2459</a></th>
-                                <td>John Wick</td>
-                                <td>
-                                  <a href="#" class="text-primary"
-                                    >johnwick@mail.com</a
-                                  >
-                                </td>
-                                <td>0208157666</td>
-
-                                <td>
-                                  <span class="badge bg-success"
-                                    >Yes</span
-                                  >
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row"><a href="#">#2059</a></th>
-                                <td>Pendy</td>
-                                <td>
-                                  <a href="#" class="text-primary"
-                                    >pendy@mail.com</a
-                                  >
-                                </td>
-                                <td>0208357666</td>
-
-                                <td>
-                                  <span class="badge bg-danger"
-                                    >No</span
-                                  >
-                                </td>
-                              </tr>
+                              <?php foreach(get_all_pharmacists() as $pharmacist):?>
+                                <tr>
+                                  <td><?php echo $pharmacist['name'] ?></td>
+                                  <td><?php echo $pharmacist['email'] ?></td>
+                                  <td><?php echo $pharmacist['phone_number'] ?></td>
+                                </tr>
+                              <?php endforeach;?>
                             </tbody>
                           </table>
                         </div>
