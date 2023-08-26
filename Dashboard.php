@@ -182,7 +182,7 @@
        <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Patients-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -190,7 +190,7 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Patients-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
@@ -208,7 +208,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Nurses-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -216,7 +216,7 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Nurses-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
@@ -233,7 +233,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Pharmacists-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -241,7 +241,7 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Pharmacists-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
@@ -258,7 +258,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Laboratrists-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -266,7 +266,7 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Laboratrists-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
@@ -283,7 +283,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Accountants-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -291,7 +291,7 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Accountants-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
@@ -368,7 +368,7 @@
         <h1>Dashboard</h1>
         <nav>
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+            <li class="breadcrumb-item"><a href="Dashboard.php">Home</a></li>
             <li class="breadcrumb-item active">Dashboard</li>
           </ol>
         </nav>

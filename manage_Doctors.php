@@ -133,10 +133,10 @@
       <!-- End Tables Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" data-bs-target="#Patients-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-people"></i><span>Patients</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="tables-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+        <ul id="Patients-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
           <li>
             <a href="manage_Patients.php">
               <i class="bi bi-circle"></i><span>Add Patients</span>
@@ -149,10 +149,10 @@
 
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" data-bs-target="#Nurses-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-people"></i><span>Nurses</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="tables-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+        <ul id="Nurses-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
           <li>
             <a href="manage_Nurses.php">
               <i class="bi bi-circle"></i><span>Add Nurses</span>
@@ -164,10 +164,10 @@
 
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" data-bs-target="#Pharmacists-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-people"></i><span>Pharmacists</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="tables-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+        <ul id="Pharmacists-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
           <li>
             <a href="manage_Pharmacists.php">
               <i class="bi bi-circle"></i><span>Add Pharmacists</span>
@@ -179,10 +179,10 @@
 
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" data-bs-target="#Laboratrists-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-people"></i><span>Laboratrists</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="tables-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+        <ul id="Laboratrists-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
           <li>
             <a href="manage_Laboratrists.php">
               <i class="bi bi-circle"></i><span>Add Laboratrists</span>
@@ -194,10 +194,10 @@
 
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" data-bs-target="#Accountants-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-people"></i><span>Accountants</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="tables-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+        <ul id="Accountants-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
           <li>
             <a href="manage_Accountants.php">
               <i class="bi bi-circle"></i><span>Add Accountants</span>
