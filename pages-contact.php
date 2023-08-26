@@ -134,7 +134,7 @@
           >
             <li>
               <a href="mange-admin.php">
-                <i class="bi bi-circle"></i><span>Add Administrator</span>
+                <i class="bi bi-circle"></i><span>Manage Administrator</span>
               </a>
             </li>
           </ul>
@@ -158,7 +158,7 @@
           >
             <li>
               <a href="manage_Doctors.php">
-                <i class="bi bi-circle"></i><span>Add Doctors</span>
+                <i class="bi bi-circle"></i><span>Manage Doctors</span>
               </a>
             </li>
           </ul>
@@ -182,7 +182,7 @@
           >
             <li>
               <a href="manage_Patients.php">
-                <i class="bi bi-circle"></i><span>Add Patients</span>
+                <i class="bi bi-circle"></i><span>Manage Patients</span>
               </a>
             </li>
           </ul>
@@ -208,7 +208,7 @@
           >
             <li>
               <a href="manage_Nurses.php">
-                <i class="bi bi-circle"></i><span>Add Nurses</span>
+                <i class="bi bi-circle"></i><span>Manage Nurses</span>
               </a>
             </li>
           </ul>
@@ -233,7 +233,7 @@
           >
             <li>
               <a href="manage_Pharmacists.php">
-                <i class="bi bi-circle"></i><span>Add Pharmacists</span>
+                <i class="bi bi-circle"></i><span>Manage Pharmacists</span>
               </a>
             </li>
           </ul>
@@ -258,7 +258,7 @@
           >
             <li>
               <a href="manage_Laboratrists.php">
-                <i class="bi bi-circle"></i><span>Add Laboratrists</span>
+                <i class="bi bi-circle"></i><span>Manage Laboratrists</span>
               </a>
             </li>
           </ul>
@@ -282,7 +282,7 @@
           >
             <li>
               <a href="manage_Accountants.php">
-                <i class="bi bi-circle"></i><span>Add Accountants</span>
+                <i class="bi bi-circle"></i><span>Manage Accountants</span>
               </a>
             </li>
           </ul>
