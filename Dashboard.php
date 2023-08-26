@@ -2,6 +2,7 @@
 
   include_once("./model/connection.php");
   include_once("./model/doctors.php");
+  include_once("./model/laboratrists.php");
 
 ?>
 
@@ -450,7 +451,7 @@
                         <i class="bi  bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>15</h6>
+                        <h6><?php echo get_laboratrists_count(); ?></h6>
                       </div>
                     </div>
                   </div>
