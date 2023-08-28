@@ -18,5 +18,4 @@ include './model/pharmacists.php';
 
 include './model/supports.php';
 
-
 ?>
