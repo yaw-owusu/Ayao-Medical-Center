@@ -13,6 +13,9 @@ switch ($action) {
     case 'home':
         include './dashboard.php';
         break;
+    case 'login':
+        include './login.php';
+        break;
     
     default:
         # code...
