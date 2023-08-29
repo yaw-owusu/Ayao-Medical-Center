@@ -19,6 +19,9 @@ switch ($action) {
     case 'logout':
         include './logout.php';
         break;
+    case 'redirect':
+    include './dashboard.php';
+    break;
     
     default:
         # code...
