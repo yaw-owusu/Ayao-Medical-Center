@@ -132,7 +132,7 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="manage_Admin.php">
+              <a href="manage_Administrators.php">
                 <i class="bi bi-circle"></i><span>Manage Administrator</span>
               </a>
             </li>

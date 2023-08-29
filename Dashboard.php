@@ -137,7 +137,7 @@
             data-bs-toggle="collapse"
             href="#"
           >
-            <i class="bi bi-person-check"></i><span>Administrator</span
+            <i class="bi bi-person-check"></i><span>Administrators</span
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
@@ -146,8 +146,8 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="manage_Admin.php">
-                <i class="bi bi-circle"></i><span>Manage Administrator</span>
+              <a href="manage_Administrators.php">
+                <i class="bi bi-circle"></i><span>Manage Administrators</span>
               </a>
             </li>
           </ul>
@@ -384,7 +384,7 @@
               <div class="col-xxl-4 col-md-4">
                 <div class="card info-card sales-card">
                   <div class="card-body">
-                    <h5 class="card-title">Doctors</h5>
+                    <h5 class="card-title">Accountants</h5>
 
                     <div class="d-flex align-items-center">
                       <div
@@ -393,7 +393,7 @@
                         <i class="bi  bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6><?php echo get_doctors_count(); ?></h6>
+                        <h6><?php echo get_accountants_count(); ?></h6>
                       </div>
                     </div>
                   </div>
@@ -401,32 +401,13 @@
               </div>
               <!-- End Cars Card -->
 
-              <!-- Brand Card -->
-              <div class="col-xxl-4 col-md-4">
-                <div class="card info-card revenue-card">
-                  <div class="card-body">
-                    <h5 class="card-title">Nurses</h5>
-
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
-                      >
-                        <i class="bi  bi-people"></i>
-                      </div>
-                      <div class="ps-3">
-                        <h6><?php echo get_nurses_count(); ?></h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Brand Card -->
+            
 
               <!-- Customers Card -->
               <div class="col-xxl-4 col-md-4">
                 <div class="card info-card customers-card">
                   <div class="card-body">
-                    <h5 class="card-title">Pharmacists</h5>
+                    <h5 class="card-title">Doctors</h5>
 
                     <div class="d-flex align-items-center">
                       <div
@@ -435,7 +416,7 @@
                         <i class="bi bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6><?php echo get_pharmacists_count(); ?></h6>
+                        <h6><?php echo get_doctors_count(); ?></h6>
                       </div>
                     </div>
                   </div>
@@ -465,7 +446,7 @@
               <div class="col-xxl-4 col-md-4">
                 <div class="card info-card customers-card">
                   <div class="card-body">
-                    <h5 class="card-title">Accountants</h5>
+                    <h5 class="card-title">Nurses</h5>
 
                     <div class="d-flex align-items-center">
                       <div
@@ -474,7 +455,7 @@
                         <i class="bi bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6><?php echo get_accountants_count(); ?></h6>
+                        <h6><?php echo get_nurses_count(); ?></h6>
                       </div>
                     </div>
                   </div>
@@ -494,6 +475,24 @@
                       </div>
                       <div class="ps-3">
                         <h6><?php echo get_patients_count(); ?></h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-md-4">
+                <div class="card info-card customers-card">
+                  <div class="card-body">
+                    <h5 class="card-title">Pharmacists</h5>
+
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                      >
+                        <i class="bi  bi-people"></i>
+                      </div>
+                      <div class="ps-3">
+                        <h6><?php echo get_pharmacists_count(); ?></h6>
                       </div>
                     </div>
                   </div>
