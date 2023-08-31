@@ -34,6 +34,15 @@ switch ($action) {
     case 'add_nurse':
         include './manage_Nurses.php';
         break;
+    case 'add_accountan':
+        include './manage_Accountants.php';
+        break;
+    case 'add_admin':
+        include './manage_Admin.php';
+        break;
+    case 'add_laboratrist':
+        include './manage_Laboratrists.php';
+        break;
 
     
     default:
