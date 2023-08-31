@@ -22,6 +22,19 @@ switch ($action) {
     case 'redirect':
     include './dashboard.php';
     break;
+
+
+    // Actions
+    case 'add_doctor':
+        include './manage_Doctors.php';
+        break;
+    case 'add_patient':
+        include './manage_Patients.php';
+        break;
+    case 'add_nurse':
+        include './manage_Nurses.php';
+        break;
+
     
     default:
         # code...
