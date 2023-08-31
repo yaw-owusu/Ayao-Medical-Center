@@ -43,8 +43,9 @@ switch ($action) {
     case 'add_laboratrist':
         include './manage_Laboratrists.php';
         break;
-
-    
+    case 'add_pharmacist':
+        include './manage_Pharmacists.php';
+        break;    
     default:
         # code...
         break;
