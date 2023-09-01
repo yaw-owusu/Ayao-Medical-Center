@@ -1,3 +1,7 @@
+<?php
+include_once("./model/connection.php");
+include_once("./model/patients.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -572,82 +576,23 @@
                     <div class="col-12">
                       <div class="card">
                         <div class="card-body">
-                          <h5 class="card-title">All Users</h5>
+                          <h5 class="card-title">All Patients</h5>
                           <table class="table table-borderless datatable">
                             <thead>
                               <tr>
-                                <th scope="col">User ID</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Phone Number</th>
-                                <th scope="col">Role</th>
                               </tr>
                             </thead>
                             <tbody>
-                              <tr>
-                                <th scope="row"><a href="#">#2457</a></th>
-                                <td>Nana Yaw</td>
-                                <td>
-                                  <a href="#" class="text-primary"
-                                    >user@mail.com</a
-                                  >
-                                </td>
-                                <td>0558157666</td>
-
-                                <td>
-                                  <span class="badge bg-success"
-                                    >User</span
-                                  >
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row"><a href="#">#2458</a></th>
-                                <td>David</td>
-                                <td>
-                                  <a href="#" class="text-primary"
-                                    >david@mail.com</a
-                                  >
-                                </td>
-                                <td>0268157666</td>
-
-                                <td>
-                                  <span class="badge bg-success"
-                                    >User</span
-                                  >
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row"><a href="#">#2459</a></th>
-                                <td>John Wick</td>
-                                <td>
-                                  <a href="#" class="text-primary"
-                                    >johnwick@mail.com</a
-                                  >
-                                </td>
-                                <td>0208157666</td>
-
-                                <td>
-                                  <span class="badge bg-success"
-                                    >User</span
-                                  >
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row"><a href="#">#2059</a></th>
-                                <td>Pendy</td>
-                                <td>
-                                  <a href="#" class="text-primary"
-                                    >pendy@mail.com</a
-                                  >
-                                </td>
-                                <td>0208357666</td>
-
-                                <td>
-                                  <span class="badge bg-success"
-                                    >User</span
-                                  >
-                                </td>
-                              </tr>
+                              <?php foreach(get_all_patients() as $patient):?>
+                                <tr>
+                                  <td><?php echo $patient['name'] ?></td>
+                                  <td><?php echo $patient['email'] ?></td>
+                                  <td><?php echo $patient['phone_numbers'] ?></td>
+                                </tr>
+                              <?php endforeach;?>
                             </tbody>
                           </table>
                         </div>
