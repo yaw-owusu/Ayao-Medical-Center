@@ -14,4 +14,17 @@ function get_all_caretakers(){
 
 }
 
+// Get number of caretakers
+
+function get_caretakers_count(){
+    global $db;
+
+    $sql = "SELECT * FROM caretakers";
+
+    $caretakers = $db->query($sql);
+
+    return $caretakers->rowCount();
+
+}
+
 ?>
