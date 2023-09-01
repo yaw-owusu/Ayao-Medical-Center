@@ -1,3 +1,19 @@
+<<<<<<< dev_nanayaw
+=======
+<?php
+
+  include_once("./model/connection.php");
+  include_once("./model/administrators.php");
+  include_once("./model/doctors.php");
+  include_once("./model/laboratrists.php");
+  include_once("./model/nurses.php");
+  include_once("./model/patients.php");
+  include_once("./model/pharmacists.php");
+  include_once("./model/accountants.php");
+
+?>
+
+>>>>>>> local
 <!DOCTYPE html>
 <html lang="en">
   <head>
