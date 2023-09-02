@@ -1,3 +1,7 @@
+<?php
+include_once("./model/connection.php");
+include_once("./model/patients.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -125,7 +129,7 @@
             data-bs-toggle="collapse"
             href="#"
           >
-            <i class="bi bi-person-check"></i><span>Administrator</span
+            <i class="bi bi-person-check"></i><span>Administrators</span
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
@@ -134,8 +138,8 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="manage_Admin.php">
-                <i class="bi bi-circle"></i><span>Add Administrator</span>
+              <a href="manage_Administrators.php">
+                <i class="bi bi-circle"></i><span>Manage Administrators</span>
               </a>
             </li>
           </ul>
@@ -160,7 +164,7 @@
           >
             <li>
               <a href="manage_Doctors.php">
-                <i class="bi bi-circle"></i><span>Add Doctors</span>
+                <i class="bi bi-circle"></i><span>Manage Doctors</span>
               </a>
             </li>
           </ul>
@@ -169,7 +173,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Patients-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -177,13 +181,13 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Patients-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
             <li>
               <a href="manage_Patients.php">
-                <i class="bi bi-circle"></i><span>Add Patients</span>
+                <i class="bi bi-circle"></i><span>Manage Patients</span>
               </a>
             </li>
           </ul>
@@ -194,7 +198,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Nurses-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -202,13 +206,13 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Nurses-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
             <li>
               <a href="manage_Nurses.php">
-                <i class="bi bi-circle"></i><span>Add Nurses</span>
+                <i class="bi bi-circle"></i><span>Manage Nurses</span>
               </a>
             </li>
           </ul>
@@ -219,7 +223,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Pharmacists-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -227,13 +231,13 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Pharmacists-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
             <li>
               <a href="manage_Pharmacists.php">
-                <i class="bi bi-circle"></i><span>Add Pharmacists</span>
+                <i class="bi bi-circle"></i><span>Manage Pharmacists</span>
               </a>
             </li>
           </ul>
@@ -244,7 +248,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Laboratrists-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -252,13 +256,13 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Laboratrists-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
             <li>
               <a href="manage_Laboratrists.php">
-                <i class="bi bi-circle"></i><span>Add Laboratrists</span>
+                <i class="bi bi-circle"></i><span>Manage Laboratrists</span>
               </a>
             </li>
           </ul>
@@ -269,7 +273,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Accountants-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -277,13 +281,13 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Accountants-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
             <li>
               <a href="manage_Accountants.php">
-                <i class="bi bi-circle"></i><span>Add Accountants</span>
+                <i class="bi bi-circle"></i><span>Manage Accountants</span>
               </a>
             </li>
           </ul>
@@ -572,82 +576,23 @@
                     <div class="col-12">
                       <div class="card">
                         <div class="card-body">
-                          <h5 class="card-title">All Users</h5>
+                          <h5 class="card-title">All Patients</h5>
                           <table class="table table-borderless datatable">
                             <thead>
                               <tr>
-                                <th scope="col">User ID</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Phone Number</th>
-                                <th scope="col">Role</th>
                               </tr>
                             </thead>
                             <tbody>
-                              <tr>
-                                <th scope="row"><a href="#">#2457</a></th>
-                                <td>Nana Yaw</td>
-                                <td>
-                                  <a href="#" class="text-primary"
-                                    >user@mail.com</a
-                                  >
-                                </td>
-                                <td>0558157666</td>
-
-                                <td>
-                                  <span class="badge bg-success"
-                                    >User</span
-                                  >
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row"><a href="#">#2458</a></th>
-                                <td>David</td>
-                                <td>
-                                  <a href="#" class="text-primary"
-                                    >david@mail.com</a
-                                  >
-                                </td>
-                                <td>0268157666</td>
-
-                                <td>
-                                  <span class="badge bg-success"
-                                    >User</span
-                                  >
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row"><a href="#">#2459</a></th>
-                                <td>John Wick</td>
-                                <td>
-                                  <a href="#" class="text-primary"
-                                    >johnwick@mail.com</a
-                                  >
-                                </td>
-                                <td>0208157666</td>
-
-                                <td>
-                                  <span class="badge bg-success"
-                                    >User</span
-                                  >
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row"><a href="#">#2059</a></th>
-                                <td>Pendy</td>
-                                <td>
-                                  <a href="#" class="text-primary"
-                                    >pendy@mail.com</a
-                                  >
-                                </td>
-                                <td>0208357666</td>
-
-                                <td>
-                                  <span class="badge bg-success"
-                                    >User</span
-                                  >
-                                </td>
-                              </tr>
+                              <?php foreach(get_all_patients() as $patient):?>
+                                <tr>
+                                  <td><?php echo $patient['name'] ?></td>
+                                  <td><?php echo $patient['email'] ?></td>
+                                  <td><?php echo $patient['phone_numbers'] ?></td>
+                                </tr>
+                              <?php endforeach;?>
                             </tbody>
                           </table>
                         </div>

@@ -132,7 +132,7 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="manage_Admin.php">
+              <a href="manage_Administrators.php">
                 <i class="bi bi-circle"></i><span>Manage Administrator</span>
               </a>
             </li>
@@ -157,7 +157,7 @@
           >
             <li>
               <a href="manage_Doctors.php">
-                <i class="bi bi-circle"></i><span>Add Doctors</span>
+                <i class="bi bi-circle"></i><span>Manage Doctors</span>
               </a>
             </li>
           </ul>
@@ -168,7 +168,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Nurses-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -176,13 +176,13 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Nurses-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
             <li>
               <a href="manage_Nurses.php">
-                <i class="bi bi-circle"></i><span>Add Nurses</span>
+                <i class="bi bi-circle"></i><span>Manage Nurses</span>
               </a>
             </li>
           </ul>
@@ -193,7 +193,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Pharmacists-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -201,13 +201,13 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Pharmacists-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
             <li>
               <a href="manage_Pharmacists.php">
-                <i class="bi bi-circle"></i><span>Add Pharmacists</span>
+                <i class="bi bi-circle"></i><span>Manage Pharmacists</span>
               </a>
             </li>
           </ul>
@@ -218,7 +218,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Laboratrists-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -226,13 +226,13 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Laboratrists-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
             <li>
               <a href="manage_Laboratrists.php">
-                <i class="bi bi-circle"></i><span>Add Laboratrists</span>
+                <i class="bi bi-circle"></i><span>Manage Laboratrists</span>
               </a>
             </li>
           </ul>
@@ -243,7 +243,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Accountants-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -251,13 +251,13 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Accountants-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
             <li>
               <a href="manage_Accountants.php">
-                <i class="bi bi-circle"></i><span>Add Accountants</span>
+                <i class="bi bi-circle"></i><span>Manage Accountants</span>
               </a>
             </li>
           </ul>

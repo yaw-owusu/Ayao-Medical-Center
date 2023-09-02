@@ -12,8 +12,3 @@ try {
     die($error_message);
     exit();
 }
-
-
-
-
-?>

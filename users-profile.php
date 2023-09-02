@@ -42,7 +42,7 @@
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="index.php" class="logo d-flex align-items-center">
+        <a href="Dashboard.php" class="logo d-flex align-items-center">
           <img src="img/logo.png" alt="" />
           <span class="d-none d-lg-block">Ayao Medical Center </span>
         </a>
@@ -121,7 +121,7 @@
     <aside id="sidebar" class="sidebar">
       <ul class="sidebar-nav" id="sidebar-nav">
         <li class="nav-item">
-          <a class="nav-link collapsed" href="index.php">
+          <a class="nav-link collapsed" href="Dashboard.php">
             <i class="bi bi-grid"></i>
             <span>Dashboard</span>
           </a>
@@ -134,7 +134,7 @@
             data-bs-toggle="collapse"
             href="#"
           >
-            <i class="bi bi-person-check"></i><span>Administrator</span
+            <i class="bi bi-person-check"></i><span>Administrators</span
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
@@ -143,37 +143,14 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="manage-admin.php">
-                <i class="bi bi-circle"></i><span>Add Administrator</span>
+              <a href="manage-Administrators.php">
+                <i class="bi bi-circle"></i><span>Manage Administrators</span>
               </a>
             </li>
           </ul>
         </li>
         <!-- End Forms Nav -->
 
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#forms-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i class="bi bi-person-check"></i><span>Administrator</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="forms-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="mange-admin.php">
-                <i class="bi bi-circle"></i><span>Add Administrator</span>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <!-- End Forms Nav -->
 
         <li class="nav-item">
           <a
@@ -192,7 +169,7 @@
           >
             <li>
               <a href="manage_Doctors.php">
-                <i class="bi bi-circle"></i><span>Add Doctors</span>
+                <i class="bi bi-circle"></i><span>Manage Doctors</span>
               </a>
             </li>
           </ul>
@@ -202,7 +179,7 @@
        <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Patients-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -210,13 +187,13 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Patients-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
             <li>
               <a href="manage_Patients.php">
-                <i class="bi bi-circle"></i><span>Add Patients</span>
+                <i class="bi bi-circle"></i><span>Manage Patients</span>
               </a>
             </li>
           </ul>
@@ -226,7 +203,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Nurses-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -234,13 +211,13 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Nurses-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
             <li>
               <a href="manage_Nurses.php">
-                <i class="bi bi-circle"></i><span>Add Nurses</span>
+                <i class="bi bi-circle"></i><span>Manage Nurses</span>
               </a>
             </li>
           </ul>
@@ -251,7 +228,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Pharmacists-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -259,13 +236,13 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Pharmacists-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
             <li>
               <a href="manage_Pharmacists.php">
-                <i class="bi bi-circle"></i><span>Add Pharmacists</span>
+                <i class="bi bi-circle"></i><span>Manage Pharmacists</span>
               </a>
             </li>
           </ul>
@@ -276,7 +253,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Laboratrists-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -284,13 +261,13 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Laboratrists-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
             <li>
               <a href="manage_Laboratrists.php">
-                <i class="bi bi-circle"></i><span>Add Laboratrists</span>
+                <i class="bi bi-circle"></i><span>Manage Laboratrists</span>
               </a>
             </li>
           </ul>
@@ -300,7 +277,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#table-nav"
+            data-bs-target="#Accountants-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -308,13 +285,13 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="table-nav"
+            id="Accountants-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
             <li>
               <a href="manage_Accountants.php">
-                <i class="bi bi-circle"></i><span>Add Accountants</span>
+                <i class="bi bi-circle"></i><span>Manage Accountants</span>
               </a>
             </li>
           </ul>

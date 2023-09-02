@@ -141,7 +141,7 @@
             data-bs-toggle="collapse"
             href="#"
           >
-            <i class="bi bi-person-check"></i><span>Administrator</span
+            <i class="bi bi-person-check"></i><span>Administrators</span
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
@@ -150,8 +150,8 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="manage_Admin.php">
-                <i class="bi bi-circle"></i><span>Add Administrator</span>
+              <a href="manage_Administrators.php">
+                <i class="bi bi-circle"></i><span>Manage Administrators</span>
               </a>
             </li>
           </ul>
@@ -175,7 +175,7 @@
           >
             <li>
               <a href="manage_Doctors.php">
-                <i class="bi bi-circle"></i><span>Add Doctors</span>
+                <i class="bi bi-circle"></i><span>Manage Doctors</span>
               </a>
             </li>
           </ul>
@@ -186,7 +186,7 @@
        <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Patients-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -194,13 +194,13 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Patients-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
             <li>
               <a href="manage_Patients.php">
-                <i class="bi bi-circle"></i><span>Add Patients</span>
+                <i class="bi bi-circle"></i><span>Manage Patients</span>
               </a>
             </li>
           </ul>
@@ -212,7 +212,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Nurses-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -220,13 +220,13 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Nurses-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
             <li>
               <a href="manage_Nurses.php">
-                <i class="bi bi-circle"></i><span>Add Nurses</span>
+                <i class="bi bi-circle"></i><span>Manage Nurses</span>
               </a>
             </li>
           </ul>
@@ -237,7 +237,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Pharmacists-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -245,13 +245,13 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Pharmacists-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
             <li>
               <a href="manage_Pharmacists.php">
-                <i class="bi bi-circle"></i><span>Add Pharmacists</span>
+                <i class="bi bi-circle"></i><span>Manage Pharmacists</span>
               </a>
             </li>
           </ul>
@@ -262,7 +262,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Laboratrists-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -270,13 +270,13 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Laboratrists-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
             <li>
               <a href="manage_Laboratrists.php">
-                <i class="bi bi-circle"></i><span>Add Laboratrists</span>
+                <i class="bi bi-circle"></i><span>Manage Laboratrists</span>
               </a>
             </li>
           </ul>
@@ -287,7 +287,7 @@
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-            data-bs-target="#tables-nav"
+            data-bs-target="#Accountants-nav"
             data-bs-toggle="collapse"
             href="#"
           >
@@ -295,13 +295,13 @@
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
-            id="tables-nav"
+            id="Accountants-nav"
             class="nav-content collapse"
             data-bs-parent="#sidebar-nav"
           >
             <li>
               <a href="manage_Accountants.php">
-                <i class="bi bi-circle"></i><span>Add Accountants</span>
+                <i class="bi bi-circle"></i><span>Manage Accountants</span>
               </a>
             </li>
           </ul>
@@ -372,7 +372,7 @@
         <h1>Dashboard</h1>
         <nav>
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+            <li class="breadcrumb-item"><a href="Dashboard.php">Home</a></li>
             <li class="breadcrumb-item active">Dashboard</li>
           </ol>
         </nav>
@@ -388,7 +388,7 @@
               <div class="col-xxl-4 col-md-4">
                 <div class="card info-card sales-card">
                   <div class="card-body">
-                    <h5 class="card-title">Doctors</h5>
+                    <h5 class="card-title">Accountants</h5>
 
                     <div class="d-flex align-items-center">
                       <div
@@ -397,7 +397,7 @@
                         <i class="bi  bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>10</h6>
+                        <h6><?php echo get_accountants_count(); ?></h6>
                       </div>
                     </div>
                   </div>
@@ -405,32 +405,13 @@
               </div>
               <!-- End Cars Card -->
 
-              <!-- Brand Card -->
-              <div class="col-xxl-4 col-md-4">
-                <div class="card info-card revenue-card">
-                  <div class="card-body">
-                    <h5 class="card-title">Nurses</h5>
-
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
-                      >
-                        <i class="bi  bi-people"></i>
-                      </div>
-                      <div class="ps-3">
-                        <h6>25</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Brand Card -->
+            
 
               <!-- Customers Card -->
               <div class="col-xxl-4 col-md-4">
                 <div class="card info-card customers-card">
                   <div class="card-body">
-                    <h5 class="card-title">Pharmacists</h5>
+                    <h5 class="card-title">Doctors</h5>
 
                     <div class="d-flex align-items-center">
                       <div
@@ -439,7 +420,7 @@
                         <i class="bi bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>15</h6>
+                        <h6><?php echo get_doctors_count(); ?></h6>
                       </div>
                     </div>
                   </div>
@@ -459,7 +440,7 @@
                         <i class="bi  bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>15</h6>
+                        <h6><?php echo get_laboratrists_count(); ?></h6>
                       </div>
                     </div>
                   </div>
@@ -469,7 +450,7 @@
               <div class="col-xxl-4 col-md-4">
                 <div class="card info-card customers-card">
                   <div class="card-body">
-                    <h5 class="card-title">Accountants</h5>
+                    <h5 class="card-title">Nurses</h5>
 
                     <div class="d-flex align-items-center">
                       <div
@@ -478,7 +459,7 @@
                         <i class="bi bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>12</h6>
+                        <h6><?php echo get_nurses_count(); ?></h6>
                       </div>
                     </div>
                   </div>
@@ -497,7 +478,25 @@
                         <i class="bi  bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>30</h6>
+                        <h6><?php echo get_patients_count(); ?></h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-md-4">
+                <div class="card info-card customers-card">
+                  <div class="card-body">
+                    <h5 class="card-title">Pharmacists</h5>
+
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                      >
+                        <i class="bi  bi-people"></i>
+                      </div>
+                      <div class="ps-3">
+                        <h6><?php echo get_pharmacists_count(); ?></h6>
                       </div>
                     </div>
                   </div>
@@ -508,94 +507,7 @@
               <div class="col-12">
                 <div class="card recent-sales overflow-auto">
                   <div class="card-body">
-                    <h5 class="card-title">Cars</h5>
 
-                    <table class="table table-borderless datatable">
-                      <thead>
-                        <tr>
-                          <th scope="col">Vehicle ID</th>
-                          <th scope="col">Brand</th>
-                          <th scope="col">Model</th>
-                          <th scope="col">Make</th>
-                          <th scope="col">Year</th>
-                          <th scope="col">Price</th>
-                          <th scope="col">Availability</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row"><a href="#">#2457</a></th>
-                          <td>Jeep Trackhawk</td>
-                          <td>
-                            <a href="#" class="text-primary">Sports</a>
-                          </td>
-                          <td>$45,070</td>
-                          <td>
-                            <span class="text-primary">2022</span>
-                          </td>
-                          <td>
-                            <span class="text-primary">$90,070</span>
-                          </td>
-                          <td>
-                            <span class="badge bg-success">Yes</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row"><a href="#">#2147</a></th>
-                          <td>Lamborghini Urus</td>
-                          <td>
-                            <a href="#" class="text-primary">Sports</a>
-                          </td>
-                          <td>$135,000</td>
-                          <td><span class="text-primary">2022</span></td>
-                          <td><span class="text-primary">$235,000</span></td>
-                          <td><span class="badge bg-success">Yes</span></td>
-                        </tr>
-                        <tr>
-                          <th scope="row"><a href="#">#2049</a></th>
-                          <td>Dorge Hellcat</td>
-                          <td>
-                            <a href="#" class="text-primary">Sports</a>
-                          </td>
-                          <td>$40,000</td>
-                          <td>
-                            <span class="text-primary">2021</span>
-                          </td>
-                          <td>
-                            <span class="text-primary">$81,000</span>
-                          </td>
-                          <td>
-                            <span class="badge bg-danger">No</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row"><a href="#">#2640</a></th>
-                          <td>Rolls Royce Wraith</td>
-                          <td><a href="#" class="text-primar">Sports</a></td>
-                          <td>$159,000</td>
-                          <td><span class="text-primary">2021</span></td>
-                          <td><span class="text-primary">$369,000</span></td>
-                          <td><span class="badge bg-danger">No</span></td>
-                        </tr>
-                        <tr>
-                          <th scope="row"><a href="#">#2644</a></th>
-                          <td>Bentley Truck</td>
-                          <td>
-                            <a href="#" class="text-primary">Sports</a>
-                          </td>
-                          <td>$100,000</td>
-                          <td>
-                            <span class="text-primary">2022</span>
-                          </td>
-                          <td>
-                            <span class="text-primary">$200,025</span>
-                          </td>
-                          <td>
-                            <span class="badge bg-success">Yes</span>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
                   </div>
                 </div>
               </div>
