@@ -15,6 +15,19 @@ function get_all_supports(){
 }
 
 
+function get_support_by_id($id){
+    global $db;
+
+    $sql = "SELECT * FROM supports WHERE id = $id ORDER BY id ASC";
+
+    $supports = $db->query($sql);
+
+    return $supports;
+
+}
+
+
+
 // Get number of supports
 
 function get_supports_count(){
