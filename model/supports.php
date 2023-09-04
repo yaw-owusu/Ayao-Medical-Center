@@ -15,14 +15,27 @@ function get_all_supports(){
 }
 
 
-function get_support_by_id($id){
+
+function get_support($id){
     global $db;
 
-    $sql = "SELECT * FROM supports WHERE id = $id ORDER BY id ASC";
+    $sql = "SELECT * FROM admin WHERE type = 'support' AND id = :id";
 
-    $supports = $db->query($sql);
+    $statement = $db->prepare($sql);
+    $statement->bindValue(':id', $id);
+    $statement->execute();
 
-    return $supports;
+    $selected_marketer = $statement->fetch();
+    $statement->closeCursor();
+
+    if( $selected_marketer == null ){
+        return false;
+    }else{
+        
+        return $selected_marketer;
+        
+    }
+
 
 }
 
