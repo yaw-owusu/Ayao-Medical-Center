@@ -62,34 +62,32 @@ function delete_supporter($id) {
     return $success;
 }
 
-function create_supporter($name,$email, $password,$image) {
+function create_supporter($name,$email, $phoneNumber) {
 
     global $db;  
     
-    $sql = "INSERT INTO supporters (name, email, password, type,date,image) 
-    VALUES (:name,:email,:password,:type,CURRENT_DATE(),:image)";
-
+    $sql = "INSERT INTO supporters (name, email, phonenumber) 
+    VALUES (:name,:email,:phoneNumber)";
 
     $statement = $db->prepare($sql);
+
     $statement->bindValue(':name', $name);
+
     $statement->bindValue(':email', $email);
-    $statement->bindValue(':password', $password);
-    $statement->bindValue(':type', 'Marketer');
-    $statement->bindValue(':image', $image["name"]);
-    
-    
+
+    $statement->bindValue(':phoneNumber', $phoneNumber);
 
     $success = $statement->execute();
+
     $statement->closeCursor();
 
-    $marketer_id = $db->lastInsertId();
+    $supporterId = $db->lastInsertId();
 
-    if($success == true){
-        upload_admin_image($image,"marketer",$marketer_id);
-        return $marketer_id;
-    }else{
+    if(!$success){
         return false;
     }
+
+    return $supporterId;
 }
 
 
