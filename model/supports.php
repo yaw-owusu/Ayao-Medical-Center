@@ -15,34 +15,27 @@ function get_all_supports(){
 }
 
 
-
+// Get supporter by id
 function get_support($id){
     global $db;
 
-    $sql = "SELECT * FROM admin WHERE type = 'support' AND id = :id";
+    $sql = "SELECT * FROM supports WHERE id = :id";
 
     $statement = $db->prepare($sql);
     $statement->bindValue(':id', $id);
     $statement->execute();
 
-    $selected_marketer = $statement->fetch();
+    $selected_supporter = $statement->fetch();
     $statement->closeCursor();
 
-    if( $selected_marketer == null ){
+    if( $selected_supporter == null ){
         return false;
-    }else{
-        
-        return $selected_marketer;
-        
     }
 
-
+    return $selected_supporter;
 }
 
-
-
 // Get number of supports
-
 function get_supports_count(){
     global $db;
 
@@ -52,6 +45,49 @@ function get_supports_count(){
 
     return $supports->rowCount();
 
+}
+
+// Delete supporter
+function delete_supporter($id) {
+
+    global $db;  
+    
+    $sql = "DELETE FROM supports WHERE id = :id";
+    
+    $statement = $db->prepare($sql);
+    $statement->bindValue(':id', $id);
+    $success = $statement->execute();
+    $statement->closeCursor();
+
+    return $success;
+}
+
+function create_supporter($name,$email, $phoneNumber) {
+
+    global $db;  
+    
+    $sql = "INSERT INTO supporters (name, email, phonenumber) 
+    VALUES (:name,:email,:phoneNumber)";
+
+    $statement = $db->prepare($sql);
+
+    $statement->bindValue(':name', $name);
+
+    $statement->bindValue(':email', $email);
+
+    $statement->bindValue(':phoneNumber', $phoneNumber);
+
+    $success = $statement->execute();
+
+    $statement->closeCursor();
+
+    $supporterId = $db->lastInsertId();
+
+    if(!$success){
+        return false;
+    }
+
+    return $supporterId;
 }
 
 
