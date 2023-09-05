@@ -105,12 +105,12 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-person-check"></i><span>Administrator</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-person-check"></i><span>Administrators</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="forms-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
           <li>
-            <a href="manage_Admin.php">
-              <i class="bi bi-circle"></i><span>Manage Administrator</span>
+            <a href="manage_Administrators.php">
+              <i class="bi bi-circle"></i><span>Manage Administrators</span>
             </a>
           </li>
         </ul>

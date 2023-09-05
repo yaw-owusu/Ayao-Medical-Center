@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Hospify App</title>
+    <title>Ayao Medical Center</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -55,7 +55,7 @@
                     class="logo d-flex align-items-center w-auto"
                   >
                     <img src="img/logo.png" alt="" />
-                    <span class="d-none d-lg-block">Hospify App</span>
+                    <span class="d-none d-lg-block">Ayao Medical Center</span>
                   </a>
                 </div>
                 <!-- End Logo -->

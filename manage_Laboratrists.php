@@ -54,6 +54,65 @@ include_once("./model/laboratrists.php");
             <!-- <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle"> -->
             <span class="d-none d-md-block dropdown-toggle ps-2">Welcome! Dr. Yaw</span> </a><!-- End Profile Iamge Icon -->
 
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.php"
+                >
+                  <i class="bi bi-person"></i>
+                  <span>My Profile</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="pages-login.php"
+                >
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Sign Out</span>
+                </a>
+              </li>
+            </ul>
+            <!-- End Profile Dropdown Items -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="Dashboard.php">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <!-- End Dashboard Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#forms-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-person-check"></i><span>Administrators</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="forms-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Administrators.php">
+                <i class="bi bi-circle"></i><span>Manage Administratosr</span>
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
               <h6>Dr. Yaw <i class="bi bi-patch-check-fill"></i></h6>

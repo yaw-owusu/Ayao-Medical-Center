@@ -124,7 +124,7 @@
             data-bs-toggle="collapse"
             href="#"
           >
-            <i class="bi bi-person-check"></i><span>Administrator</span
+            <i class="bi bi-person-check"></i><span>Administrators</span
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
@@ -133,8 +133,8 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="mange-admin.php">
-                <i class="bi bi-circle"></i><span>Manage Administrator</span>
+              <a href="mange-Administrators.php">
+                <i class="bi bi-circle"></i><span>Manage Administrators</span>
               </a>
             </li>
           </ul>
@@ -458,7 +458,7 @@
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
       <div class="copyright">
-        &copy; Copyright <strong><span>Hospify App</span></strong
+        &copy; Copyright <strong><span>Ayao Medical Center</span></strong
         >. All Rights Reserved
       </div>
       <div class="credits">Designed by <a href="#">Group 34</a></div>
