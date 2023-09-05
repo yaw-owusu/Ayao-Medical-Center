@@ -1,5 +1,3 @@
-<<<<<<< dev_nanayaw
-=======
 <?php
 
   include_once("./model/connection.php");
@@ -13,7 +11,6 @@
 
 ?>
 
->>>>>>> local
 <!DOCTYPE html>
 <html lang="en">
   <head>
