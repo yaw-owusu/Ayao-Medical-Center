@@ -1,5 +1,34 @@
 <?php
 
+// Get all admins
+
+function get_all_admins(){
+
+    global $db;
+
+    $sql = "SELECT * FROM admins ORDER BY id ASC";
+
+    $admins = $db->query($sql);
+
+    return $admins;
+
+}
+
+
+// Get number of admins
+
+function get_admins_count(){
+
+    global $db;
+
+    $sql = "SELECT * FROM admins";
+
+    $admins = $db->query($sql);
+
+    return $admins->rowCount();
+
+}
+
 
 // Delete admin
 function delete_admin($id)
