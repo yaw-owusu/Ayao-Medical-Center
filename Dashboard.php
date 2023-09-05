@@ -1,6 +1,7 @@
 <?php
 
   include_once("./model/connection.php");
+  include_once("./model/administrators.php");
   include_once("./model/doctors.php");
   include_once("./model/laboratrists.php");
   include_once("./model/nurses.php");
