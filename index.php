@@ -1,5 +1,7 @@
 <?php 
 
+include_once("./utilities/main.php");
+
 $action = filter_input(INPUT_POST, 'action');
 
 if ($action == NULL) {
@@ -11,8 +13,24 @@ if ($action == NULL) {
 
 switch ($action) {
     case 'home':
+
+        $accountantsCount = get_accountants_count();
+
+        $doctorsCount = get_doctors_count();
+
+        $laboratristsCount = get_laboratrists_count();
+
+        $nursesCount = get_nurses_count();
+
+        $patientsCount = get_patients_count();
+
+        $pharmacistsCount = get_pharmacists_count();
+
+        // include './view/dashboard.php';
         include './dashboard.php';
+
         break;
+
     case 'login':
         include './login.php';
         break;
