@@ -376,7 +376,7 @@
                 <div class="info-box card">
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>nanayaw@mail.com<br />hospifyapp@mail.com</p>
+                  <p>dr.nanayaw@mail.com<br />hospifyapp@mail.com</p>
                 </div>
               </div>
               <div class="col-lg-6">

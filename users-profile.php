@@ -359,7 +359,7 @@
         <h1>Profile</h1>
         <nav>
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+            <li class="breadcrumb-item"><a href="Dashboard.php">Home</a></li>
             <li class="breadcrumb-item">Users</li>
             <li class="breadcrumb-item active">Profile</li>
           </ol>
@@ -462,12 +462,12 @@
 
                     <div class="row">
                       <div class="col-lg-3 col-md-4 label">Company</div>
-                      <div class="col-lg-9 col-md-8">Swift Car Rentals</div>
+                      <div class="col-lg-9 col-md-8">Ayao Medical Center</div>
                     </div>
 
                     <div class="row">
                       <div class="col-lg-3 col-md-4 label">Job</div>
-                      <div class="col-lg-9 col-md-8">Car Rentals Manager</div>
+                      <div class="col-lg-9 col-md-8">Doctor</div>
                     </div>
 
                     <div class="row">
@@ -572,7 +572,7 @@
                             type="text"
                             class="form-control"
                             id="company"
-                            value="Swift Car Rentals"
+                            value="Ayao Medical Center"
                           />
                         </div>
                       </div>
@@ -589,7 +589,7 @@
                             type="text"
                             class="form-control"
                             id="Job"
-                            value="Swift Car Rentals Manager"
+                            value="Doctor"
                           />
                         </div>
                       </div>
