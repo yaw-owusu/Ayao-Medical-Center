@@ -353,7 +353,7 @@ include_once("./model/patients.php");
 
     <main id="main" class="main">
       <div class="pagetitle">
-        <h1>Manage Patients</h1>
+        <h1>Manage Nurses</h1>
       </div>
       <!-- End Page Title -->
 
