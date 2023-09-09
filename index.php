@@ -29,8 +29,8 @@ switch ($action) {
 
         $pharmacistsCount = get_pharmacists_count();
 
-        include './view/dashboard.php';
-        // include './dashboard.php';
+        // include './view/dashboard.php';
+        include './Dashboard.php';
 
         break;
 
