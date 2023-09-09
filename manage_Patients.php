@@ -620,7 +620,7 @@ include_once("./model/patients.php");
       </div>
       <div class="credits">
         
-        Designed by <a href="#">Group 34</a>
+        Designed by <a href="#">Group 33</a>
       </div>
     </footer>
     <!-- End Footer -->

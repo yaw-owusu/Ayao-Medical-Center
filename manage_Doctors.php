@@ -302,21 +302,14 @@
                           <input type="text" class="form-control" id="inputNanme4" />
                         </div>
                         <div class="col-12">
-                          <label for="inputNanme4" class="form-label">Contact</label>
-                          <input type="text" class="form-control" id="inputNanme4" />
-                        </div>
-                        <div class="col-12">
                           <label for="inputNanme4" class="form-label">Email</label>
                           <input type="text" class="form-control" id="inputNanme4" />
                         </div>
                         <div class="col-12">
-                          <label for="inputNanme4" class="form-label">Model</label>
+                          <label for="inputNanme4" class="form-label">Phone Number</label>
                           <input type="text" class="form-control" id="inputNanme4" />
                         </div>
-                        <div class="col-12">
-                          <label for="inputNanme4" class="form-label">Year</label>
-                          <input type="text" class="form-control" id="inputNanme4" />
-                        </div>
+                        
 
                         <div class="text-center">
                           <button type="submit" class="btn btn-primary">
@@ -340,21 +333,14 @@
                           <input type="text" class="form-control" id="inputNanme4" />
                         </div>
                         <div class="col-12">
-                          <label for="inputNanme4" class="form-label">Contact</label>
+                          <label for="inputNanme4" class="form-label">Email</label>
                           <input type="email" class="form-control" id="inputNanme4" />
                         </div>
                         <div class="col-12">
-                          <label for="inputNanme4" class="form-label">Brand</label>
+                          <label for="inputNanme4" class="form-label">Phone Number</label>
                           <input type="text" class="form-control" id="inputNanme4" />
                         </div>
-                        <div class="col-12">
-                          <label for="inputNanme4" class="form-label">Model</label>
-                          <input type="text" class="form-control" id="inputNanme4" />
-                        </div>
-                        <div class="col-12">
-                          <label for="inputNanme4" class="form-label">Year</label>
-                          <input type="text" class="form-control" id="inputNanme4" />
-                        </div>
+                       
 
                         <div class="text-center">
                           <button type="submit" class="btn btn-primary">

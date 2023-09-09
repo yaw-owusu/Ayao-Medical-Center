@@ -474,7 +474,7 @@ include_once("./model/accountants.php");
       &copy; Copyright <strong><span>Ayao Medical Center</span></strong>. All Rights Reserved
     </div>
     <div class="credits">
-      Designed by <a href="#">Group 34</a>
+      Designed by <a href="#">Group 33</a>
     </div>
   </footer>
   <!-- End Footer -->

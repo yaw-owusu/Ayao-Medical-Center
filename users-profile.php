@@ -882,7 +882,7 @@
         &copy; Copyright <strong><span>Hospify App</span></strong
         >. All Rights Reserved
       </div>
-      <div class="credits">Designed by <a href="#">Group 34</a></div>
+      <div class="credits">Designed by <a href="#">Group 33</a></div>
     </footer>
     <!-- End Footer -->
 
