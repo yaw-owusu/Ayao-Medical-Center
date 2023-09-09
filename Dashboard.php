@@ -385,6 +385,25 @@
               <div class="col-xxl-4 col-md-4">
                 <div class="card info-card sales-card">
                   <div class="card-body">
+                    <h5 class="card-title">Administrators</h5>
+
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                      >
+                        <i class="bi  bi-people"></i>
+                      </div>
+                      <div class="ps-3">
+                        <h6><?php echo get_administrators_count(); ?></h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Cars Card -->
+              <div class="col-xxl-4 col-md-4">
+                <div class="card info-card sales-card">
+                  <div class="card-body">
                     <h5 class="card-title">Accountants</h5>
 
                     <div class="d-flex align-items-center">
@@ -523,7 +542,7 @@
         &copy; Copyright <strong><span>Ayao Medical Center</span></strong
         >. All Rights Reserved
       </div>
-      <div class="credits">Designed by <a href="#">Group 34</a></div>
+      <div class="credits">Designed by <a href="#">Group 33</a></div>
     </footer>
     <!-- End Footer -->
 

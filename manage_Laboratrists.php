@@ -506,7 +506,7 @@ include_once("./model/laboratrists.php");
     <div class="copyright">
       &copy; Copyright <strong><span>Ayao Medical Center</span></strong>. All Rights Reserved
     </div>
-    <div class="credits">Designed by <a href="#">Group 34</a></div>
+    <div class="credits">Designed by <a href="#">Group 33</a></div>
   </footer>
   <!-- End Footer -->
 

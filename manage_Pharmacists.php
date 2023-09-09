@@ -482,7 +482,7 @@ include_once("./model/pharmacists.php");
       <!-- You can delete the links only if you purchased the pro version. -->
       <!-- Licensing information: https://bootstrapmade.com/license/ -->
       <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-      Designed by <a href="#">Group 34</a>
+      Designed by <a href="#">Group 33</a>
     </div>
   </footer>
   <!-- End Footer -->
