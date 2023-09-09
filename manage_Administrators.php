@@ -413,7 +413,7 @@
                               >Phone Number</label
                             >
                             <input
-                              type="password"
+                              type="text"
                               class="form-control"
                               id="inputNanme4"
                             />
@@ -466,7 +466,7 @@
                               >Phone Number</label
                             >
                             <input
-                              type="password"
+                              type="text"
                               class="form-control"
                               id="inputNanme4"
                             />
