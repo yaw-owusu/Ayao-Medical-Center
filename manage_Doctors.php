@@ -293,31 +293,46 @@
               </ul>
 
               <div class="tab-content pt-2" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                  <div class="container">
-                    <form class="row g-3 mt-3">
-                      <div class="col-md-8 offset-md-2">
-                        <div class="col-12">
-                          <label for="inputNanme4" class="form-label">Name</label>
-                          <input type="text" class="form-control" id="inputNanme4" />
-                        </div>
-                        <div class="col-12">
-                          <label for="inputNanme4" class="form-label">Contact</label>
-                          <input type="text" class="form-control" id="inputNanme4" />
-                        </div>
-                        <div class="col-12">
-                          <label for="inputNanme4" class="form-label">Email</label>
-                          <input type="text" class="form-control" id="inputNanme4" />
-                        </div>
-                        <div class="col-12">
-                          <label for="inputNanme4" class="form-label">Model</label>
-                          <input type="text" class="form-control" id="inputNanme4" />
-                        </div>
-                        <div class="col-12">
-                          <label for="inputNanme4" class="form-label">Year</label>
-                          <input type="text" class="form-control" id="inputNanme4" />
-                        </div>
-
+                  <div
+                    class="tab-pane fade show active"
+                    id="home"
+                    role="tabpanel"
+                    aria-labelledby="home-tab"
+                  >
+                    <div class="container">
+                      <form class="row g-3 mt-3">
+                        <div class="col-md-8 offset-md-2">
+                          <div class="col-12">
+                            <label for="inputNanme4" class="form-label"
+                              >Name</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="inputNanme4"
+                            />
+                          </div>
+                          <div class="col-12">
+                            <label for="inputEmail4" class="form-label"
+                              >Email</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="inputEmail4"
+                            />
+                          </div>
+                          <div class="col-12">
+                            <label for="inputNanme4" class="form-label"
+                              >Phone Number</label
+                            >
+                            <input
+                              type="number_format"
+                              class="form-control"
+                              id="inputNanme4"
+                            />
+                          </div>
+                          
                         <div class="text-center">
                           <button type="submit" class="btn btn-primary">
                             Add
@@ -340,19 +355,11 @@
                           <input type="text" class="form-control" id="inputNanme4" />
                         </div>
                         <div class="col-12">
-                          <label for="inputNanme4" class="form-label">Contact</label>
+                          <label for="inputNanme4" class="form-label">Email</label>
                           <input type="email" class="form-control" id="inputNanme4" />
                         </div>
                         <div class="col-12">
-                          <label for="inputNanme4" class="form-label">Brand</label>
-                          <input type="text" class="form-control" id="inputNanme4" />
-                        </div>
-                        <div class="col-12">
-                          <label for="inputNanme4" class="form-label">Model</label>
-                          <input type="text" class="form-control" id="inputNanme4" />
-                        </div>
-                        <div class="col-12">
-                          <label for="inputNanme4" class="form-label">Year</label>
+                          <label for="inputNanme4" class="form-label">Phone Number</label>
                           <input type="text" class="form-control" id="inputNanme4" />
                         </div>
 

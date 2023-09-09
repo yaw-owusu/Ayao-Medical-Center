@@ -342,17 +342,14 @@ include_once("./model/accountants.php");
                           <input type="text" class="form-control" id="inputNanme4" />
                         </div>
                         <div class="col-12">
-                          <label for="inputEmail4" class="form-label">Contact</label>
+                          <label for="inputEmail4" class="form-label">Email</label>
                           <input type="text" class="form-control" id="inputEmail4" />
                         </div>
                         <div class="col-12">
-                          <label for="inputNanme4" class="form-label">Message</label>
+                          <label for="inputNanme4" class="form-label">Phone Number</label>
                           <input type="text" class="form-control" id="inputNanme4" />
                         </div>
-                        <div class="col-12">
-                          <label for="inputNanme4" class="form-label">Date</label>
-                          <input type="date" class="form-control" id="inputNanme4" />
-                        </div>
+                       
 
                         <div class="text-center">
                           <button type="submit" class="btn btn-primary">
