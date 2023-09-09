@@ -112,10 +112,11 @@ include_once("./model/patients.php");
       <!-- End Icons Navigation -->
     </header>
     <!-- ======= Sidebar ======= -->
-    <aside id="sidebar" class="sidebar">
+     <!-- ======= Sidebar ======= -->
+     <aside id="sidebar" class="sidebar">
       <ul class="sidebar-nav" id="sidebar-nav">
         <li class="nav-item">
-          <a class="nav-link collapsed" href="Dashboard.php">
+          <a class="nav-link" href="Dashboard.php">
             <i class="bi bi-grid"></i>
             <span>Dashboard</span>
           </a>
@@ -146,7 +147,6 @@ include_once("./model/patients.php");
         </li>
         <!-- End Forms Nav -->
 
-
         <li class="nav-item">
           <a
             class="nav-link collapsed"
@@ -170,7 +170,9 @@ include_once("./model/patients.php");
           </ul>
         </li>
        <!-- End Tables Nav -->
-        <li class="nav-item">
+
+
+       <li class="nav-item">
           <a
             class="nav-link collapsed"
             data-bs-target="#Patients-nav"
@@ -193,6 +195,7 @@ include_once("./model/patients.php");
           </ul>
         </li>
        <!-- End Tables Nav -->
+
 
 
         <li class="nav-item">
@@ -294,50 +297,8 @@ include_once("./model/patients.php");
         </li>
         <!-- End Tables Nav -->
 
-
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#charts-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i class="bi bi-person-gear"></i><span>General Services</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="charts-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="pages-managevehicles.php">
-                <i class="bi bi-circle"></i><span>Manage Vehicles</span>
-              </a>
-            </li>
-            <li>
-              <a href="manage-brands.php">
-                <i class="bi bi-circle"></i><span>Manage Brands</span>
-              </a>
-            </li>
-            <li>
-              <a href="manage-testimonials.php">
-                <i class="bi bi-circle"></i><span>Manage Testimonials</span>
-              </a>
-            </li>
-            <li>
-              <a href="manage-bookings.php">
-                <i class="bi bi-circle"></i><span>Manage Bookings</span>
-              </a>
-            </li>
-            <li>
-              <a href="manage-subscribers.php">
-                <i class="bi bi-circle"></i><span>Manage Subscribers</span>
-              </a>
-            </li>
-          </ul>
-        </li>
         <!-- End Charts Nav -->
+        
 
         <!-- <li class="nav-heading">Pages</li> -->
 
@@ -350,6 +311,7 @@ include_once("./model/patients.php");
         <!-- End Contact Page Nav -->
       </ul>
     </aside>
+    <!-- End Sidebar-->
 
     <main id="main" class="main">
       <div class="pagetitle">

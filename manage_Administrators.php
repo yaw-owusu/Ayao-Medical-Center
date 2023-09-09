@@ -105,11 +105,11 @@
       </nav>
       <!-- End Icons Navigation -->
     </header>
-    <!-- ======= Sidebar ======= -->
-    <aside id="sidebar" class="sidebar">
+      <!-- ======= Sidebar ======= -->
+      <aside id="sidebar" class="sidebar">
       <ul class="sidebar-nav" id="sidebar-nav">
         <li class="nav-item">
-          <a class="nav-link collapsed" href="Dashboard.php">
+          <a class="nav-link" href="Dashboard.php">
             <i class="bi bi-grid"></i>
             <span>Dashboard</span>
           </a>
@@ -123,7 +123,7 @@
             data-bs-toggle="collapse"
             href="#"
           >
-            <i class="bi bi-person-check"></i><span>Administrator</span
+            <i class="bi bi-person-check"></i><span>Administrators</span
             ><i class="bi bi-chevron-down ms-auto"></i>
           </a>
           <ul
@@ -133,7 +133,7 @@
           >
             <li>
               <a href="manage_Administrators.php">
-                <i class="bi bi-circle"></i><span>Manage Administrator</span>
+                <i class="bi bi-circle"></i><span>Manage Administrators</span>
               </a>
             </li>
           </ul>
@@ -163,6 +163,32 @@
           </ul>
         </li>
        <!-- End Tables Nav -->
+
+
+       <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#Patients-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-people"></i><span>Patients</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="Patients-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage_Patients.php">
+                <i class="bi bi-circle"></i><span>Manage Patients</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+       <!-- End Tables Nav -->
+
 
 
         <li class="nav-item">
@@ -264,50 +290,8 @@
         </li>
         <!-- End Tables Nav -->
 
-
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#charts-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i class="bi bi-person-gear"></i><span>General Services</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="charts-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="pages-managevehicles.php">
-                <i class="bi bi-circle"></i><span>Manage Vehicles</span>
-              </a>
-            </li>
-            <li>
-              <a href="manage-brands.php">
-                <i class="bi bi-circle"></i><span>Manage Brands</span>
-              </a>
-            </li>
-            <li>
-              <a href="manage-testimonials.php">
-                <i class="bi bi-circle"></i><span>Manage Testimonials</span>
-              </a>
-            </li>
-            <li>
-              <a href="manage-bookings.php">
-                <i class="bi bi-circle"></i><span>Manage Bookings</span>
-              </a>
-            </li>
-            <li>
-              <a href="manage-subscribers.php">
-                <i class="bi bi-circle"></i><span>Manage Subscribers</span>
-              </a>
-            </li>
-          </ul>
-        </li>
         <!-- End Charts Nav -->
+        
 
         <!-- <li class="nav-heading">Pages</li> -->
 
@@ -320,6 +304,7 @@
         <!-- End Contact Page Nav -->
       </ul>
     </aside>
+    <!-- End Sidebar-->
 
     <main id="main" class="main">
       <div class="pagetitle">
