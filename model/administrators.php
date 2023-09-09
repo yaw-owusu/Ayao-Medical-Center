@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 
 // Get all administrators
@@ -6,9 +6,9 @@
 function get_all_administrators(){
     global $db;
 
-    $sql = "SELECT * FROM administrators ORDER BY id ASC";
+    $sql = "SELECT * FROM admins ORDER BY id ASC";
 
-    $pharmacists = $db->query($sql);
+    $administrators = $db->query($sql);
 
     return $administrators;
 
@@ -20,7 +20,7 @@ function get_all_administrators(){
 function get_administrators_count(){
     global $db;
 
-    $sql = "SELECT * FROM administrators";
+    $sql = "SELECT * FROM admins";
 
     $administrators = $db->query($sql);
 
@@ -29,4 +29,4 @@ function get_administrators_count(){
 }
 
 
-?>
+?> -->
