@@ -572,7 +572,7 @@
                             type="text"
                             class="form-control"
                             id="company"
-                            value="Swift Car Rentals"
+                            value="Ayao Medical Center"
                           />
                         </div>
                       </div>
@@ -589,7 +589,7 @@
                             type="text"
                             class="form-control"
                             id="Job"
-                            value="Swift Car Rentals Manager"
+                            value="Doctor"
                           />
                         </div>
                       </div>
