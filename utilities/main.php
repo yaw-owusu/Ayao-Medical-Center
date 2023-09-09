@@ -18,5 +18,7 @@ include './model/pharmacists.php';
 
 include './model/supports.php';
 
+include './model/admin.php';
+
 
 ?>

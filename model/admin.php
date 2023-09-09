@@ -2,7 +2,8 @@
 
 // Get all admins
 
-function get_all_admins(){
+function get_all_admins()
+{
 
     global $db;
 
@@ -11,13 +12,13 @@ function get_all_admins(){
     $admins = $db->query($sql);
 
     return $admins;
-
 }
 
 
 // Get number of admins
 
-function get_admins_count(){
+function get_admins_count()
+{
 
     global $db;
 
@@ -26,7 +27,6 @@ function get_admins_count(){
     $admins = $db->query($sql);
 
     return $admins->rowCount();
-
 }
 
 
@@ -77,3 +77,60 @@ function create_admin($name, $email, $phoneNumber)
 
     return $adminId;
 }
+
+
+function update_admin($id, $name, $email, $phone)
+{
+
+    global $db;
+
+    $sql = "UPDATE admins SET name =:name,email=:email,phonenumber=:phone WHERE id =:id";
+
+    $statement = $db->prepare($sql);
+
+    $statement->bindValue(':id', $id);
+
+    $statement->bindValue(':name', $name);
+
+    $statement->bindValue(':email', $email);
+
+    $statement->bindValue(':phone', $phone);
+
+    $success = $statement->execute();
+
+    $statement->closeCursor();
+
+    if (!$success) {
+        return false;
+    }
+
+    return $success;
+}
+
+
+function get_admin($id)
+{
+    global $db;
+
+    $sql = "SELECT * FROM admins WHERE id = :id";
+
+    $statement = $db->prepare($sql);
+
+    $statement->bindValue(':id', $id);
+
+    $statement->execute();
+
+    $selected_admin = $statement->fetch();
+
+    $statement->closeCursor();
+
+    if ($selected_admin == null) {
+        return false;
+    } else {
+
+        return $selected_admin;
+    }
+    
+}
+
+

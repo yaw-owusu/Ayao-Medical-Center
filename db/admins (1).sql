@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 24, 2023 at 07:04 PM
+-- Generation Time: Sep 09, 2023 at 11:18 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -18,31 +18,38 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `grp34-ayoa-medical-center`
+-- Database: `ayao-medical-center`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nurses`
+-- Table structure for table `admins`
 --
 
-CREATE TABLE `nurses` (
+CREATE TABLE `admins` (
   `id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `phone_number` varchar(20) NOT NULL,
-  `department` varchar(30) NOT NULL
+  `name` varchar(20) NOT NULL,
+  `email` varchar(20) NOT NULL,
+  `phonenumber` varchar(15) NOT NULL,
+  `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `admins`
+--
+
+INSERT INTO `admins` (`id`, `name`, `email`, `phonenumber`, `password`) VALUES
+(9, 'David Edem', 'david@mail.com', '0558157666', '123');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `nurses`
+-- Indexes for table `admins`
 --
-ALTER TABLE `nurses`
+ALTER TABLE `admins`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -50,10 +57,10 @@ ALTER TABLE `nurses`
 --
 
 --
--- AUTO_INCREMENT for table `nurses`
+-- AUTO_INCREMENT for table `admins`
 --
-ALTER TABLE `nurses`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `admins`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

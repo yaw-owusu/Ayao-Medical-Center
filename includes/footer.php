@@ -1,7 +1,7 @@
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
       <div class="copyright">
-        &copy; Copyright <strong><span>Ayao Medical Center</span></strong
+        &copy; Copyright <strong><span>Ayao Medical Center <span id="pageDate"></span></span></strong
         >. All Rights Reserved
       </div>
       <div class="credits">Designed by <a href="#">Group 34</a></div>
@@ -15,6 +15,7 @@
     ></a>
 
     <!--  JS Files -->
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/chart.js/chart.umd.js"></script>
@@ -26,5 +27,7 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.validate.js"></script>
+    <script src="assets/js/services.js" ></script>
   </body>
 </html>

@@ -14,7 +14,7 @@
             </a>
             <ul id="forms-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="manage_Admin.php">
+                    <a href=".?action=view_manageAdmins">
                         <i class="bi bi-circle"></i><span>Manage Administrator</span>
                     </a>
                 </li>
@@ -28,7 +28,7 @@
             </a>
             <ul id="tables-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="manage_Doctors.php">
+                    <a href=".?action=view_manageDoctors">
                         <i class="bi bi-circle"></i><span>Manage Doctors</span>
                     </a>
                 </li>
