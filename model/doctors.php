@@ -28,49 +28,84 @@ function get_doctors_count(){
 
 }
 
+
+function create_doctor($name, $email, $phoneNumber,$spec)
+{
+
+    global $db;
+
+    $sql = "INSERT INTO doctors (name, email, phone_numbers,speciality) 
+    VALUES (:name,:email,:phoneNumber,:spec)";
+
+    $statement = $db->prepare($sql);
+
+    $statement->bindValue(':name', $name);
+
+    $statement->bindValue(':email', $email);
+
+    $statement->bindValue(':phoneNumber', $phoneNumber);
+
+    $statement->bindValue(':spec', $spec);
+
+    $success = $statement->execute();
+
+    $statement->closeCursor();
+
+    $adminId = $db->lastInsertId();
+
+    if (!$success) {
+        return false;
+    }
+
+    return $adminId;
+}
+
 // // Add a teammember
-// function add_teammember($name, $position, $telephone,$email,$image) {
-//     global $db;  
-
-//     $sql = "INSERT INTO teammembers(name, position, telephone, image,email,date, time) 
-//     VALUES (:name,:position,:telephone,:image,:email,CURRENT_DATE(),CURRENT_TIME())";
-    
-//     $statement = $db->prepare($sql);
-
-//     $statement->bindValue(':name', $name);
-//     $statement->bindValue(':position', $position);
-//     $statement->bindValue(':telephone', $telephone);
-//     $statement->bindValue(':email', $email);
-//     $statement->bindValue(':image',$image);
-
-
-//     $success = $statement->execute();
-//     $statement->closeCursor();
-
-//     $service_id = $db->lastInsertId();
-
-//     if($success == true){
-//         return $service_id;
-//     }else{
-//         return false;
-//     }
-// }
-
 // // Delete a teammember
-// function delete_teammember($id) {
+function delete_doctor($id) {
 
-//     global $db;  
+    global $db;  
     
-//     $sql = "DELETE FROM teammembers WHERE id = :id";
+    $sql = "DELETE FROM doctors WHERE id = :id";
     
-//     $statement = $db->prepare($sql);
-//     $statement->bindValue(':id', $id);
-//     $success = $statement->execute();
-//     $statement->closeCursor();
+    $statement = $db->prepare($sql);
 
-//     return $success;
-// }
+    $statement->bindValue(':id', $id);
+
+    $success = $statement->execute();
+
+    $statement->closeCursor();
+
+    return $success;
+}
 
 
+function update_doctor($id, $name, $email, $phone,$spec)
+{
 
-?>
+    global $db;
+
+    $sql = "UPDATE doctors SET name =:name,email=:email,phone_numbers=:phone,speciality=:spec WHERE id =:id";
+
+    $statement = $db->prepare($sql);
+
+    $statement->bindValue(':id', $id);
+
+    $statement->bindValue(':name', $name);
+
+    $statement->bindValue(':email', $email);
+
+    $statement->bindValue(':phone', $phone);
+
+    $statement->bindValue(':spec', $spec);
+
+    $success = $statement->execute();
+
+    $statement->closeCursor();
+
+    if (!$success) {
+        return false;
+    }
+
+    return $success;
+}
