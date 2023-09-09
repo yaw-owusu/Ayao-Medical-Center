@@ -305,49 +305,6 @@
         </li>
         <!-- End Tables Nav -->
 
-
-        <li class="nav-item">
-          <a
-            class="nav-link collapsed"
-            data-bs-target="#charts-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i class="bi bi-person-gear"></i><span>General Services</span
-            ><i class="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="charts-nav"
-            class="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="pages-managevehicles.php">
-                <i class="bi bi-circle"></i><span>Manage Vehicles</span>
-              </a>
-            </li>
-            <li>
-              <a href="manage-brands.php">
-                <i class="bi bi-circle"></i><span>Manage Brands</span>
-              </a>
-            </li>
-            <li>
-              <a href="manage-testimonials.php">
-                <i class="bi bi-circle"></i><span>Manage Testimonials</span>
-              </a>
-            </li>
-            <li>
-              <a href="manage-bookings.php">
-                <i class="bi bi-circle"></i><span>Manage Bookings</span>
-              </a>
-            </li>
-            <li>
-              <a href="manage-subscribers.php">
-                <i class="bi bi-circle"></i><span>Manage Subscribers</span>
-              </a>
-            </li>
-          </ul>
-        </li>
         <!-- End Charts Nav -->
         
 
