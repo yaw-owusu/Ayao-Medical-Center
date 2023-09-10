@@ -462,12 +462,12 @@
 
                     <div class="row">
                       <div class="col-lg-3 col-md-4 label">Company</div>
-                      <div class="col-lg-9 col-md-8">Swift Car Rentals</div>
+                      <div class="col-lg-9 col-md-8">Ayao Medical Center</div>
                     </div>
 
                     <div class="row">
                       <div class="col-lg-3 col-md-4 label">Job</div>
-                      <div class="col-lg-9 col-md-8">Car Rentals Manager</div>
+                      <div class="col-lg-9 col-md-8">Doctor</div>
                     </div>
 
                     <div class="row">

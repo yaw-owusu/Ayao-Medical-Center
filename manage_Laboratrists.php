@@ -421,7 +421,7 @@ include_once("./model/patients.php");
                               >Phone Number</label
                             >
                             <input
-                              type="password"
+                              type="text"
                               class="form-control"
                               id="inputNanme4"
                             />
@@ -474,7 +474,7 @@ include_once("./model/patients.php");
                               >Phone Number</label
                             >
                             <input
-                              type="password"
+                              type="text"
                               class="form-control"
                               id="inputNanme4"
                             />
